@@ -9,22 +9,32 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
 </head>
 
 <body class="box-border p-0 m-0 bg-[#080808]">
+    <!-- custom cursor  -->
+    <div style="transition: all 0.2s cubic-bezier(0, 0, 0.3642, 1)   ;"
+        class="custom-cursor size-[11px] bg-white rounded-full fixed z-60 -left-[4.5px] shadow-[0_0_30px_5px_rgba(255,255,0,0.2)] pointer-events-none ">
+    </div>
 
     <!-- <nav></nav>-->
     <nav id="nav"
-        class="fixed colg:left-1/2 colg:-translate-x-1/2 border border-[#fffffe1a] bg-[#080808] coxl:bg-[#0F0F0F] rounded-[33px] overflow-hidden transition-all duration-500 flex max-coxl:items-start coxl:items-center justify-between h-16 colg:w-210 px-4.5 coxl:px-10 mt-[25px] max-md:right-4.5 max-md:left-4.5 max-colg:right-10 max-colg:left-10">
+        class="fixed z-50 colg:left-1/2 colg:-translate-x-1/2 border border-[#fffffe1a] bg-[#080808] coxl:bg-[#0F0F0F] rounded-[33px] overflow-hidden transition-all duration-500 flex max-coxl:items-start coxl:items-center justify-between h-16 colg:w-210 px-4.5 coxl:px-10 mt-[25px] max-sm:right-2 max-sm:left-2 max-md:right-4.5 max-md:left-4.5 max-colg:right-10 max-colg:left-10">
         <div class="coxl:flex coxl:items-center coxl:justify-between w-full  ">
             <div class="flex items-center justify-between h-16 max-coxl:w-full">
                 <!-- LOGO-left-side  -->
                 <div class="coxl:w-[143px]">
-                    <img class="w-20 h-auto cursor-pointer" src="img/1polo.svg" alt="">
+                    <img class="w-20 h-auto cursor-pointer" src="img/nav-logo.svg" alt="">
                 </div>
                 <!-- hamburger -->
                 <div id="hamburger"
-                    class="flex flex-col items-center justify-center gap-1.5 coxl:hidden cursor-pointer transition-all duration-500">
+                    class="flex flex-col items-center justify-center gap-1.5 mr-1.5 coxl:hidden cursor-pointer transition-all duration-500">
 
                     <div id="line-1"
                         class="bg-white w-5 h-[2px] rounded-full transition-all duration-300 origin-center">
@@ -76,13 +86,212 @@
             </div>
         </div>
     </nav>
-    <!-- <Johan-Bekar-section></Johan-Bekar-section> -->
+    <!-- <Banner-1-section></Banner-1-section> -->
     <section class="px-4.5 pt-30 pb-20 md:px-10 md:pt-40 md:pb-25">
-        <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos, quidem veniam
-            velit tempora quo tenetur voluptas sunt officiis iste facere aspernatur cum! Nesciunt a, illum tempora iste
-            doloremque est ipsam.</p>
+        <!-- <div class="absolute -top-0 right-13 -z-10">
+            <video class="h-screen w-scree" autoplay muted loop>
+                <source src="video/banner-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div> -->
+        <!-- main-div  -->
+        <div class="flex flex-col w-full gap-11 ">
+            <!-- upper-section  -->
+            <div class="flex justify-center ">
+                <div class="flex flex-col gap-6 relative w-full max-w-[1200px]">
+                    <!-- tag -->
+                    <div
+                        class="text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-56.5 py-1.5 px-4 rounded-full">
+                        <span
+                            class="inline-flex items-center justify-center border-y border-x-2 border-white rounded-full p-[1px]">
+                            <span class="size-[5px] bg-white rounded-full m-[0.5px]"></span>
+                        </span>
+                        <span style="word-spacing: 1px;" class="ml-1.5  flex shrink-0 tracking-[-0.5px]">UI/UX & Graphic
+                            Designer</span>
+                    </div>
+                    <!-- main-heading  -->
+                    <div class="flex flex-col gap-4">
+                        <!-- heading  -->
+                        <div class="flex items-center gap-4 ">
+                            <h1 class="text-white text-[clamp(0px,17vw,72px)] font-2 -mt-1.5 tracking-[-2px]">
+                                Johan
+                                <span class="text-primary">Beker</span>
+                            </h1>
+                            <a href="#"
+                                class="arow-container group  rounded-full size-13.5 mt-3.5 overflow-hidden max-md:hidden">
+                                <span
+                                    class="bg-[#080808] rounded-full shadow-[inset_0_2px_0_0_rgba(184,180,180,0.14)] -rotate-35  flex items-center justify-center size-13.5 ">
+                                    <svg class="arow-svg size-[24.5px] " xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 256 256" focusable="false"
+                                        color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
+                                        style="user-select: none; display: inline-block; fill: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); color: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); flex-shrink: 0;">
+                                        <g color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
+                                            weight="regular">
+                                            <path
+                                                d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z">
+                                            </path>
+                                        </g>
+                                    </svg>
+                                </span>
+                                <p
+                                    class="text-[14px] text-primary font-semibold opacity-0 group-hover:opacity-100 group-hover:-rotate-40 absolute left-100 group-hover:left-103 top-35 group-hover:top-31 transition-all duration-200">
+                                    (about me)</p>
+                            </a>
+                        </div>
+                        <!-- paragraph -->
+                        <div class="text-[15px] md:text-base text-primary  font-semibold leading-7.5 -mt-[9px]">I'm a
+                            versatile designer
+                            specializing
+                            in graphic, web, and product
+                            <br class="max-sm:hidden">
+                            design to help grow your business. Let's bulid something great!
+                        </div>
+                    </div>
+                    <!-- buttons  -->
+                    <div class=" flex max-sm:flex-col items-center max-sm:items-start gap-4 -mt-[2px]">
+                        <!-- button-1  -->
+                        <button style="background: linear-gradient(180deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -382%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10))
+                         100%);"
+                            class="text-[15px] md:text-base text-white bg-[linear-gradient(180deg,_rgb(120,120,120)_0%,_rgb(10,10,10)_100%)] font-semibold rounded-[100px] max-md:w-70 h-14.5 px-[26px] py-[13px]">See
+                            All Projects</button>
+                        <!-- button-2  -->
+                        <button style="background: linear-gradient(180deg, var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))  0%, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120,
+                        120)) 140%)"
+                            class="text-[15px] md:text-base text-[#080808] bg-[linear-gradient(180deg,_white_0%,_rgb(120,120,120)_100%)] font-semibold rounded-[100px] max-md:w-70 h-14.5 px-[26px] py-[13px]">Contact
+                            Now</button>
+                    </div>
+                    <!-- Comments  -->
+                    <div class="absolute right-0 max-coxl:hidden">
+                        <!-- comment 1 wrapper -->
+                        <div class="relative top-15 right-78 comment-1">
+                            <!-- comment-1  -->
+                            <div
+                                class="bg-[#0F0F0F] -rotate-10 shadow-[inset_0_2px_0_0_rgba(184,180,180,0.08)] rounded-[12px] flex flex-col gap-3.5 w-[219px] h-[143px] p-6 ">
+                                <span class="text-[15px] text-white font-medium font-3 leading-7">" Working with him was
+                                    a
+                                    game
+                                    changer! "</span>
+                                <span class="text-primary text-[15px] font-medium font-3 flex justify-end">
+                                    -pranavnb</span>
+                            </div>
+                            <!-- cursor icon of comment 1 -->
+                            <span class="relative -right-57.5 -top-6 ">
+                                <svg class="size-[27.5px] rotate-95" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 256 256" focusable="false"
+                                    color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
+                                    style="user-select: none; display: inline-block; fill: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); color: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); flex-shrink: 0;">
+                                    <g color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
+                                        weight="duotone">
+                                        <path
+                                            d="M213.66,201,201,213.66a8,8,0,0,1-11.31,0l-51.31-51.31a8,8,0,0,0-13,2.46l-17.82,46.41a8,8,0,0,1-14.85-.71L40.41,50.44a8,8,0,0,1,10-10L210.51,92.68a8,8,0,0,1,.71,14.85l-46.41,17.82a8,8,0,0,0-2.46,13l51.31,51.31A8,8,0,0,1,213.66,201Z"
+                                            opacity="0.2"></path>
+                                        <path
+                                            d="M168,132.69,214.08,115l.33-.13A16,16,0,0,0,213,85.07L52.92,32.8A15.95,15.95,0,0,0,32.8,52.92L85.07,213a15.82,15.82,0,0,0,14.41,11l.78,0a15.84,15.84,0,0,0,14.61-9.59l.13-.33L132.69,168,184,219.31a16,16,0,0,0,22.63,0l12.68-12.68a16,16,0,0,0,0-22.63ZM195.31,208,144,156.69a16,16,0,0,0-26,4.93c0,.11-.09.22-.13.32l-17.65,46L48,48l159.85,52.2-45.95,17.64-.32.13a16,16,0,0,0-4.93,26h0L208,195.31Z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </div>
+                        <!-- comment 2 wrapper  -->
+                        <div class="relative bottom-5 right-2 comment-2">
+                            <!-- comment-2  -->
+                            <!-- cursor icon of comment 2 -->
+                            <span class="relative -left-3.5 -top-3.5 ">
+                                <svg class="size-[27.5px] rotate-0" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 256 256" focusable="false"
+                                    color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
+                                    style="user-select: none; display: inline-block; fill: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); color: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); flex-shrink: 0;">
+                                    <g color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
+                                        weight="duotone">
+                                        <path
+                                            d="M213.66,201,201,213.66a8,8,0,0,1-11.31,0l-51.31-51.31a8,8,0,0,0-13,2.46l-17.82,46.41a8,8,0,0,1-14.85-.71L40.41,50.44a8,8,0,0,1,10-10L210.51,92.68a8,8,0,0,1,.71,14.85l-46.41,17.82a8,8,0,0,0-2.46,13l51.31,51.31A8,8,0,0,1,213.66,201Z"
+                                            opacity="0.2"></path>
+                                        <path
+                                            d="M168,132.69,214.08,115l.33-.13A16,16,0,0,0,213,85.07L52.92,32.8A15.95,15.95,0,0,0,32.8,52.92L85.07,213a15.82,15.82,0,0,0,14.41,11l.78,0a15.84,15.84,0,0,0,14.61-9.59l.13-.33L132.69,168,184,219.31a16,16,0,0,0,22.63,0l12.68-12.68a16,16,0,0,0,0-22.63ZM195.31,208,144,156.69a16,16,0,0,0-26,4.93c0,.11-.09.22-.13.32l-17.65,46L48,48l159.85,52.2-45.95,17.64-.32.13a16,16,0,0,0-4.93,26h0L208,195.31Z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                            <!-- comment  -->
+                            <div
+                                class="bg-[#0F0F0F] rotate-10 shadow-[inset_0_2px_0_0_rgba(184,180,180,0.08)] rounded-[12px] flex flex-col gap-3.5 w-[219px] h-[143px] p-6 ">
+                                <span class="text-[15px] text-white font-medium font-3 leading-7">" We Increased our
+                                    conversions
+                                    by 200% "</span>
+                                <span class="text-primary text-[15px] font-medium font-3 flex justify-end">
+                                    -vijaynb</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- comment end  -->
+                </div>
+            </div>
+            <!-- bottom-section  -->
+            <div class="grid md:grid-cols-2 gap-4 w-full">
+                <div class="flex flex-col gap-6">
+                    <!-- img-1  -->
+                    <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                        class="bg-[#0f0f0f] rounded-[10px]">
+                        <img class="w-full max-h-[443px] md:h-[509px] rounded-[30px] object-cover p-5"
+                            src="img/Banner-img-1.avif" alt="">
+                        <a href="#"
+                            class="arow-container group  rounded-full size-13.5 mt-3.5 overflow-hidden max-md:hidden">
+                            <span
+                                class="bg-[#080808] rounded-full shadow-[inset_0_2px_0_0_rgba(184,180,180,0.14)] -rotate-35  flex items-center justify-center size-13.5 ">
+                                <svg class="arow-svg size-[24.5px] " xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 256 256" focusable="false"
+                                    color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
+                                    style="user-select: none; display: inline-block; fill: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); color: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); flex-shrink: 0;">
+                                    <g color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
+                                        weight="regular">
+                                        <path
+                                            d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z">
+                                        </path>
+                                    </g>
+                                </svg>
+                            </span>
+                            <p
+                                class="text-[14px] text-primary font-semibold opacity-0 group-hover:opacity-100 group-hover:-rotate-40 absolute left-100 group-hover:left-103 top-35 group-hover:top-31 transition-all duration-200">
+                                (about me)</p>
+                        </a>
+                    </div>
+                    <!-- img-2  -->
+                    <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                        class="bg-[#0f0f0f] rounded-[10px]">
+                        <img class="w-full max-h-[443px] md:h-[235px] rounded-[30px] object-cover p-5"
+                            src="img/Banner-img-2.avif" alt="">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-6 max-md:hidden">
+                    <!-- img-1  -->
+                    <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                        class="bg-[#0f0f0f] rounded-[10px]">
+                        <img class="w-full md:h-[234px] rounded-[30px] object-cover p-5" src="img/Banner-img-3.avif"
+                            alt="">
+                    </div>
+                    <!-- img-2  -->
+                    <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                        class="bg-[#0f0f0f] rounded-[10px]">
+                        <img class="w-full md:h-[508px] rounded-[30px] object-cover p-5" src="img/Banner-img-4.avif"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bottom arow  -->
+        <span class="bottom-arow  flex justify-center mt-11">
+            <svg class="size-[25px] cursor-pointer" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                focusable="false" color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
+                style="user-select: none; display: inline-block; fill: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); color: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); flex-shrink: 0;">
+                <g color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))" weight="bold">
+                    <path
+                        d="M216.49,104.49l-80,80a12,12,0,0,1-17,0l-80-80a12,12,0,0,1,17-17L128,159l71.51-71.52a12,12,0,0,1,17,17Z">
+                    </path>
+                </g>
+            </svg>
+        </span>
     </section>
-    <div class="pb-2000"></div>
+    <!-- <div class="pb-100"></div> -->
     <script src="Scirpt.js"></script>
 </body>
 

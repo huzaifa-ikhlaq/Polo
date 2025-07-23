@@ -24,6 +24,14 @@ body {
     font-family: "Plus Jakarta Sans", "Plus Jakarta Sans Placeholder", sans-serif;
 }
 
+.font-2 {
+    font-family: "Satoshi", "Satoshi Placeholder", sans-serif;
+}
+
+.font-3 {
+    font-family: "Inter", sans-serif;
+}
+
 #nav.open #line-1 {
     transform: rotate(45deg) translateY(5.5px);
 }
@@ -38,5 +46,108 @@ body {
     align-items: start;
 }
 
+/* comments animattion  */
+
+.comment-1 {
+    animation: comment1 7s infinite linear;
+}
+
+@keyframes comment1 {
+    0% {
+        transform: translateY(-9%);
+    }
+
+    50% {
+        transform: translateY(7%);
+    }
 
 
+    100% {
+        transform: translateY(-9%);
+    }
+}
+
+.comment-2 {
+    animation: comment2 7s infinite linear;
+}
+
+@keyframes comment2 {
+    0% {
+        transform: translateY(9%);
+    }
+
+    50% {
+        transform: translateY(-6%);
+    }
+
+
+    100% {
+        transform: translateY(9%);
+    }
+}
+
+/* arow jump animation  */
+
+.arow-svg.upjump {
+    animation: arow-jump-up 250ms linear;
+}
+
+.arow-svg.downjump {
+    animation: arow-jump-down 250ms linear;
+}
+
+@keyframes arow-jump-up {
+    0% {
+        transform: translateX(0%);
+    }
+
+    60% {
+        transform: translateX(100%);
+    }
+
+    61% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes arow-jump-down {
+    0% {
+        transform: translateX(0%);
+    }
+
+    60% {
+        transform: translateX(-100%);
+    }
+
+    61% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* bottom arrow  */
+
+.bottom-arow {
+    animation: ups-downs 2s infinite linear;
+}
+
+@keyframes ups-downs {
+    0% {
+        transform: translateY(-10%);
+    }
+
+    50% {
+        transform: translateY(40%);
+    }
+
+    100% {
+        transform: translateY(-10%);
+    }
+}

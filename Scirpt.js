@@ -1,5 +1,13 @@
 // loading
 
+
+// custom cursor 
+let customCursor = document.querySelector('.custom-cursor')
+
+document.addEventListener('mousemove', function (e) {
+    customCursor.style.transform = `translate(${e.clientX}px,${e.clientY}px)`
+})
+
 // nav meanu 
 let nav = document.querySelector('#nav');
 let hamburger = document.querySelector('#hamburger');
@@ -31,3 +39,19 @@ window.addEventListener('resize', function () {
         nav.classList.remove('open');
     }
 });
+
+// arow jump animation 
+
+let arowContainer = document.querySelector('.arow-container')
+let arowsvg = document.querySelector('.arow-svg')
+
+arowContainer.addEventListener('mouseenter', () => {
+    arowsvg.classList.remove('upjump', 'downjump')
+    void arowsvg.offsetWidth;
+    arowsvg.classList.add('upjump')
+})
+arowContainer.addEventListener('mouseleave', () => {
+    arowsvg.classList.remove('upjump', 'downjump')
+    void arowsvg.offsetWidth;
+    arowsvg.classList.add('downjump')
+})
