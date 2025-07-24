@@ -89,11 +89,11 @@ body {
 /* arow jump animation  */
 
 .arow-svg.upjump {
-    animation: arow-jump-up 250ms linear;
+    animation: arow-jump-up 300ms linear;
 }
 
 .arow-svg.downjump {
-    animation: arow-jump-down 250ms linear;
+    animation: arow-jump-down 300ms linear;
 }
 
 @keyframes arow-jump-up {
