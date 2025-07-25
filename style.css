@@ -12,9 +12,9 @@
     /* 992px */
     --breakpoint-lg: 65.625rem;
     /* 1050px */
-    --breakpoint-xl: 75rem;
+    --breakpoint-coxl: 75rem;
     /* 1200px */
-    --breakpoint-coxl: 81.25rem;
+    --breakpoint-xl: 81.25rem;
     /* 1300px */
     --breakpoint-2xl: 87.5rem;
     /* 1400px */
@@ -44,6 +44,129 @@ body {
     height: 480px;
     transition: all 0.5s ease;
     align-items: start;
+}
+
+/* shooting stars animation */
+
+/* shooting-star-1 */
+.shooting-star-1 {
+    animation: shooting-star-1 3s linear;
+}
+
+@keyframes shooting-star-1 {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    61% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translatex(630px);
+        opacity: 0;
+    }
+}
+
+/* shooting-star-2 */
+.shooting-star-2 {
+    animation: shooting-star-2 3.5s linear;
+}
+
+@keyframes shooting-star-2 {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    61% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translatex(630px);
+        opacity: 0;
+    }
+}
+
+/* shooting-star-3 */
+.shooting-star-3 {
+    animation: shooting-star-3 3.5s 1s linear;
+}
+
+@keyframes shooting-star-3 {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    61% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translatex(630px);
+        opacity: 0;
+    }
+}
+
+/* shooting-star-4 */
+.shooting-star-4 {
+    animation: shooting-star-4 5s 2s linear;
+}
+
+@keyframes shooting-star-4 {
+    0% {
+        transform: translateX(0);
+        opacity: 0.5;
+    }
+
+    1% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(700px);
+        opacity: 0;
+    }
+}
+
+/* shooting-star-5 */
+.shooting-star-5 {
+    animation: shooting-star-5 4s 5s linear;
+}
+
+@keyframes shooting-star-5 {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: translateX(600px);
+        opacity: 0;
+    }
 }
 
 /* comments animattion  */
@@ -149,5 +272,28 @@ body {
 
     100% {
         transform: translateY(-10%);
+    }
+}
+
+/* available animation  */
+
+.available {
+    animation: available 0.5s 2s infinite linear;
+}
+
+@keyframes available {
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    70%{
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 0;
+        width: 40px;
+        height: 40px;
     }
 }

@@ -20,22 +20,25 @@
 <body class="box-border p-0 m-0 bg-[#080808]">
     <!-- custom cursor  -->
     <div style="transition: all 0.2s cubic-bezier(0, 0, 0.3642, 1)   ;"
-        class="custom-cursor size-[11px] bg-white rounded-full fixed z-60 -left-[4.5px] shadow-[0_0_30px_5px_rgba(255,255,0,0.2)] pointer-events-none ">
-        <div class="inner-cursor"></div>
+        class="custom-cursor size-[11px] bg-white rounded-full fixed z-60 -left-[4.5px] shadow-[0_0_30px_5px_rgba(255,255,0,0.2)] pointer-events-none overflow-hidden">
+        <div
+            class="inner-cursor w-full h-full rounded-full bg-white/5 flex items-center justify-center shrink-0  text-white  backdrop-blur-[10px]">
+            <span class="flex shrink-0">View project</span>
+        </div>
     </div>
 
     <!-- <nav></nav>-->
     <nav id="nav"
-        class="fixed z-50 colg:left-1/2 colg:-translate-x-1/2 border border-[#fffffe1a] bg-[#080808] coxl:bg-[#0F0F0F] rounded-[33px] overflow-hidden transition-all duration-500 flex max-coxl:items-start coxl:items-center justify-between h-16 colg:w-210 px-4.5 coxl:px-10 mt-[25px] max-sm:right-2 max-sm:left-2 max-md:right-4.5 max-md:left-4.5 max-colg:right-10 max-colg:left-10">
-        <div class="coxl:flex coxl:items-center coxl:justify-between w-full  ">
-            <div class="flex items-center justify-between h-16 max-coxl:w-full">
+        class="fixed z-50 colg:left-1/2 colg:-translate-x-1/2 border border-[#fffffe1a] bg-[#080808] xl:bg-[#0F0F0F] rounded-[33px] overflow-hidden transition-all duration-500 flex max-xl:items-start xl:items-center justify-between h-16 colg:w-210 px-4.5 xl:px-10 mt-[25px] max-sm:right-2 max-sm:left-2 max-md:right-4.5 max-md:left-4.5 max-colg:right-10 max-colg:left-10">
+        <div class="xl:flex xl:items-center xl:justify-between w-full  ">
+            <div class="flex items-center justify-between h-16 max-xl:w-full">
                 <!-- LOGO-left-side  -->
-                <div class="coxl:w-[143px]">
+                <div class="xl:w-[143px]">
                     <img class="w-20 h-auto cursor-pointer" src="img/nav-logo.svg" alt="">
                 </div>
                 <!-- hamburger -->
                 <div id="hamburger"
-                    class="flex flex-col items-center justify-center gap-1.5 mr-1.5 coxl:hidden cursor-pointer transition-all duration-500">
+                    class="flex flex-col items-center justify-center gap-1.5 mr-1.5 xl:hidden cursor-pointer transition-all duration-500">
 
                     <div id="line-1"
                         class="bg-white w-5 h-[2px] rounded-full transition-all duration-300 origin-center">
@@ -47,29 +50,30 @@
             </div>
             <!-- items-right-side -->
             <div id="nav-items"
-                class="flex coxl:items-center max-coxl:flex-col  max-coxl:w-full  transition-all duration-300 ">
+                class="flex xl:items-center max-xl:flex-col  max-xl:w-full  transition-all duration-300 ">
                 <!-- nav-items  -->
                 <!-- nav-item-1  -->
                 <span id="item-1"
-                    class=" text-primary hover:text-[#FFFF] font-semibold px-[12px] coxl:px-[15px] h-16 py-1.5 max-coxl:my-2  items-center coxl:flex hidden">
+                    class=" text-primary text-[15px] md:text-base hover:text-[#FFFF] font-semibold px-[12px] xl:px-[15px] h-16 py-1.5 max-xl:my-2  items-center xl:flex hidden">
                     <a href="#">Services</a>
                 </span>
                 <!-- nav-item-2 -->
                 <span id="item-2"
-                    class=" text-primary hover:text-[#FFFF] font-semibold px-[12px] coxl:px-[15px] h-16 py-1.5 max-coxl:mb-2  items-center coxl:flex hidden "><a
+                    class=" text-primary text-[15px] md:text-base hover:text-[#FFFF] font-semibold px-[12px] xl:px-[15px] h-16 py-1.5 max-xl:mb-2  items-center xl:flex hidden "><a
                         href="#">Projects</a></span>
                 <!-- nav-item-3 -->
                 <span id="item-3"
-                    class=" text-primary hover:text-[#FFFF] font-semibold px-[12px] coxl:px-[15px] h-16 py-1.5 max-coxl:mb-2  items-center coxl:flex hidden "><a
+                    class=" text-primary text-[15px] md:text-base hover:text-[#FFFF] font-semibold px-[12px] xl:px-[15px] h-16 py-1.5 max-xl:mb-2  items-center xl:flex hidden "><a
                         href="#">Testimonials</a></span>
                 <!-- nav-item-4  -->
                 <span id="item-4"
-                    class=" text-primary hover:text-[#FFFF] font-semibold px-[12px] coxl:px-[15px] h-16 py-1.5   items-center coxl:flex hidden "><a
+                    class=" text-primary text-[15px] md:text-base hover:text-[#FFFF] font-semibold px-[12px] xl:px-[15px] h-16 py-1.5   items-center xl:flex hidden "><a
                         href="#">Contact</a></span>
                 <!-- nav-item-5 -->
-                <span id="item-5" class=" coxl:flex hidden h-16 items-center max-coxl:mt-2 coxl:ml-3">
+                <span id="item-5" class=" xl:flex hidden h-16 items-center max-xl:mt-2 xl:ml-3">
                     <span
-                        class="text-primary bg-[linear-gradient(180deg,rgba(255,255,255,0.1),rgba(255,255,255,0.1)),linear-gradient(180deg,rgba(8,8,8,1),rgb(10,10,10))] shadow-[inset_0px_-0.48175px_0.48175px_-1.25px_rgba(0,0,0,0.68),inset_0px_-1.83083px_1.83083px_-2.5px_rgba(0,0,0,0.596),inset_0px_-8px_8px_-3.75px_rgba(0,0,0,0.235)] font-semibold border border-[#fffffe1a] rounded-full group cursor-pointer flex items-center justify-center h-12  px-5 py-2 "><a
+                        style="background: linear-gradient(180deg, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10))  -74%, var(--token-b2b2cec5-8316-4f9c-8fd9-5fdfc3c24032, rgba(255, 255, 255, 0.1))  183%); box-shadow: rgba(0, 0, 0, 0.68) 0px -0.48175px 0.48175px -1.25px inset, rgba(0, 0, 0, 0.596) 0px -1.83083px 1.83083px -2.5px inset, rgba(0, 0, 0, 0.235) 0px -8px 8px -3.75px inset;"
+                        class="text-primary text-[15px] md:text-base  font-semibold border border-[#fffffe1a] rounded-full group cursor-pointer flex items-center justify-center h-12  px-5 py-2 "><a
                             href="#" class="flex items-center gap-1.5">
                             <span>
                                 <svg class="text-primary group-hover:text-white transition-all duration-400 w-[24px] h-[24px]"
@@ -88,13 +92,49 @@
         </div>
     </nav>
     <!-- <Banner-1-section></Banner-1-section> -->
-    <section class="px-4.5 pt-30 pb-20 md:px-10 md:pt-40 md:pb-25">
-        <!-- <div class="absolute -top-0 right-13 -z-10">
-            <video class="h-screen w-scree" autoplay muted loop>
+    <section class="relative z-0 px-4.5 pt-30 pb-20 md:px-10 md:pt-40 md:pb-25 overflow-hidden">
+        <!-- overlayer  -->
+        <div class="bg-black/90 absolute left-0 top-0 w-full h-full "></div>
+        <!-- shooting star -->
+        <div class="  absolute top-0 max-xl:left-1/2 max-xl:translate-x-1/2 xl:right-200  ">
+            <!-- shooting-star-1  -->
+            <div style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);  "
+                class="shooting-star-1 opacity-0 text-white relative -top-30 right-75 rounded-[2px] w-26 h-[1px] mt-20 rotate-25">
+                <div style="box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 6px 1px;"
+                    class="w-[3px] h-[2px] absolute right-0 -top-[0.5px]"></div>
+            </div>
+            <!-- shooting-star-2  -->
+            <div style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);  "
+                class="shooting-star-2 opacity-0 text-white relative -top-30 right-73 rounded-[2px] w-26 h-[0.5px] mt-20 rotate-25">
+                <div style="box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 6px 1px;"
+                    class="w-[3px] h-[2px] absolute right-0 -top-[0.5px]"></div>
+            </div>
+            <!-- shooting-star-3  -->
+            <div style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);  "
+                class="shooting-star-3 opacity-0 text-white relative -top-50 right-73 rounded-[2px] w-26 h-[0.5px] mt-20 rotate-25">
+                <div style="box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 6px 1px;"
+                    class="w-[3px] h-[2px] absolute right-0 -top-[0.5px]"></div>
+            </div>
+            <!-- shooting-star-4  -->
+            <div style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);  "
+                class="shooting-star-4 opacity-0 text-white relative -top-25 right-85 rounded-[2px] w-26 h-[1px] mt-20 rotate-20">
+                <div style="box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 6px 1px;"
+                    class="w-[3px] h-[2px] absolute right-0 -top-[0.5px]"></div>
+            </div>
+            <!-- shooting-star-5  -->
+            <div style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);  "
+                class="shooting-star-5 opacity-0 text-white relative -top-75 right-85 rounded-[2px] w-26 h-[1px] mt-20 rotate-22 ">
+                <div style="box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 6px 1px;"
+                    class="w-[3px] h-[2px] absolute right-0 -top-[0.5px]"></div>
+            </div>
+        </div>
+        <!-- video  -->
+        <div class="absolute -z-40 top-35 right-0 ">
+            <video class="h-screen scale-150" autoplay muted loop>
                 <source src="video/banner-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-        </div> -->
+        </div>
         <!-- main-div  -->
         <div class="flex flex-col w-full gap-11 ">
             <!-- upper-section  -->
@@ -113,7 +153,7 @@
                     <!-- main-heading  -->
                     <div class="flex flex-col gap-4">
                         <!-- heading  -->
-                        <div class="flex items-center gap-4 ">
+                        <div class="flex items-center  gap-4 ">
                             <h1 class="text-white text-[clamp(0px,17vw,72px)] font-2 -mt-1.5 tracking-[-2px]">
                                 Johan
                                 <span class="text-primary">Beker</span>
@@ -162,7 +202,7 @@
                             Now</button>
                     </div>
                     <!-- Comments  -->
-                    <div class="absolute right-0 max-coxl:hidden">
+                    <div class="absolute right-0 max-xl:hidden">
                         <!-- comment 1 wrapper -->
                         <div class="relative top-15 right-78 comment-1">
                             <!-- comment-1  -->
@@ -228,13 +268,13 @@
                 </div>
             </div>
             <!-- bottom-section  -->
-            <div class="flex justify-center max-md:flex-col md:gap-4 ">
+            <div class="flex justify-center max-md:flex-col md:gap-4 2xl:px-6">
                 <!-- 1- column  -->
                 <div class="flex flex-col gap-6 ">
                     <!-- img-1  -->
                     <div style="box-shadow:rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="banner-img arow-container bg-[#0f0f0f] cursor-pointer p-5 rounded-[10px] relative">
-                        <img class="w-full max-sm:max-h-[161px] max-md:max-h-[443px] md:h-[509px] rounded-[10px] object-cover bg-left"
+                        class="banner-img arow-container bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px] relative">
+                        <img class="w-full max-sm:max-h-[161px] max-md:ma5-h-[443px] md:h-[509px] rounded-[10px] object-cover bg-left"
                             src="img/Banner-img-1.avif" alt="">
                         <!-- arow icon  -->
                         <a href="#"
@@ -257,8 +297,8 @@
                     </div>
                     <!-- img-2  -->
                     <div style="box-shadow:rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="banner-img arow-container bg-[#0f0f0f] p-5 rounded-[10px] relative">
-                        <img class="w-full max-h-[161px] sm:max-h-[443px] md:h-[245px] rounded-[10px] object-cover"
+                        class="banner-img arow-container bg-[#0f0f0f] p-5 rounded-[20px] relative">
+                        <img class="w-full max-h-[161px] sm:max-h-[443px] md:h-[245px] rounded-[10px] bg-left object-cover"
                             src="img/Banner-img-2.avif" alt="">
                         <!-- arow icon  -->
                         <a href="#"
@@ -284,8 +324,8 @@
                 <div class="flex flex-col gap-6 max-md:hidden">
                     <!-- img-3  -->
                     <div style="box-shadow:rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="banner-img arow-container relative bg-[#0f0f0f] p-5 rounded-[10px]">
-                        <img class="w-full h-[245px] rounded-[10px] object-cover bg-left" src="img/Banner-img-3.avif"
+                        class="banner-img arow-container relative bg-[#0f0f0f] p-5 rounded-[20px]">
+                        <img class="w-full h-[245px] rounded-[15px] object-cover bg-left" src="img/Banner-img-3.avif"
                             alt="">
                         <!-- arow icon  -->
                         <a href="#"
@@ -308,8 +348,8 @@
                     </div>
                     <!-- img-4  -->
                     <div style="box-shadow:rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="banner-img arow-container relative bg-[#0f0f0f] p-5 rounded-[10px]">
-                        <img class="w-full h-[509px] rounded-[10px] object-cover" src="img/Banner-img-4.avif" alt="">
+                        class="banner-img arow-container relative bg-[#0f0f0f] p-5 rounded-[20px]">
+                        <img class="w-full h-[509px] rounded-[15px] object-cover" src="img/Banner-img-4.avif" alt="">
                         <!-- arow icon  -->
                         <a href="#"
                             class="  rounded-full absolute bottom-2 left-1  size-13.5 mt-3.5 overflow-hidden max-md:hidden">
@@ -345,7 +385,152 @@
             </svg>
         </span>
     </section>
-    <!-- <div class="pb-100"></div> -->
+    <!-- <Expert-Designer-section-2></Expert-Designer-section-2> -->
+    <section class="bg-[#0A0A0A] border border-[#272727] rounded-[16px] px-4.5 py-20 md:px-10 md:py-25">
+        <!-- main-heading  -->
+        <div class="flex flex-col items-center gap-6">
+            <!-- tag -->
+            <div
+                class="text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-39.5 py-1.5 px-4 rounded-full -mb-1">
+                <span
+                    class="inline-flex items-center justify-center border-y border-x-2 border-white rounded-full p-[1px]">
+                    <span class="size-[5px] bg-white rounded-full m-[0.5px]"></span>
+                </span>
+                <span style="word-spacing: 1px;" class="ml-1.5  flex shrink-0 tracking-[-0.5px]">Expert Designer</span>
+            </div>
+            <!-- header  -->
+            <div class="flex flex-col gap-4">
+                <!-- heading  -->
+                <h1
+                    class="text-[40px] md:text-[44px] xl:text-[54px] text-white text-center leading-11 tracking-[-2px] font-2 -mt-1">
+                    Johan Beker,
+                    <span class="text-primary">
+                        Your Designer
+                    </span>
+                </h1>
+                <!-- paragraph -->
+                <p class="text-primary text-center font-semibold -mt-1.5">
+                    Brief initial persentation of myself and my previous experiences.
+                </p>
+            </div>
+        </div>
+        <!-- main content -->
+        <div class="flex xl:gap-11 max-xl:flex-col justify-center mt-11">
+            <!-- left-side  -->
+            <div style="box-shadow: 16px 24px 20px 8px #0006, inset 0 2px #b8b4b414;"
+                class="bg-[#0F0F0] flex flex-col rounded-[16px] pb-8 px-6 pt-6">
+                <div class="relative">
+                    <img class="w-full xl:w-101 h-95.5 mb-6 object-cover" src="img/seciton-2-img-1.avif" alt="">
+
+                    <div class="flex items-center justify-center w-full absolute  bottom-11">
+                        <span
+                            class="size-7 bg-[#0A0E0A] flex items-center justify-center rounded-full  relative mr-2.5">
+                            <span class="size-[6px] flex bg-[#31EE33] rounded-full"></span>
+                            <span
+                                class="available  bg-[#31EE33]/20 rounded-full flex items-center justify-center absolute"></span>
+                        </span>
+                        <h5 class="text-white text-[12px] font-semibold    ">
+                            Available for work</h5>
+                    </div>
+
+                </div>
+                <h3 class="text-xl xl:text-[25px] text-white font-semibold mb-2">Hello I am Johan Beker</h3>
+                <p class="text-white text-[15px] font-medium mb-6">UI/UX Iteraction Designer Based in Berlin.</p>
+                <!-- social media icon  -->
+                <div class="flex items-center">
+                    <!-- twitter icon  -->
+                    <span class="p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 16 16">
+                            <path fill="#fff"
+                                d="M9.294 6.928L14.357 1h-1.2L8.762 6.147L5.25 1H1.2l5.31 7.784L1.2 15h1.2l4.642-5.436L10.751 15h4.05zM7.651 8.852l-.538-.775L2.832 1.91h1.843l3.454 4.977l.538.775l4.491 6.47h-1.843z" />
+                        </svg>
+                    </span>
+                    <!-- line 1 -->
+                    <div class="bg-[#272727] h-6 w-[2px] mx-6"></div>
+                    <!-- instagram icon  -->
+                    <span class="p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                            <g fill="none" stroke="#fff" stroke-width="1">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8" />
+                                <path d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m17.5 6.51l.01-.011" />
+                            </g>
+                        </svg>
+                    </span>
+                    <!-- line 2 -->
+                    <div class="bg-[#272727] h-6 w-[1.5px] mx-6"></div>
+                    <!-- basket ball -->
+                    <span class="p-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 24 24">
+                            <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1">
+                                <circle cx="12" cy="12" r="9.25" />
+                                <path d="M18.54 18.54s-1.852-4.79-5.415-8.227s-8.823-3.445-8.823-3.445" />
+                                <path
+                                    d="M13.912 13.912c2.241-2.242 4.86-3.613 7.113-3.927a9.24 9.24 0 0 1-2.484 8.555a9.24 9.24 0 0 1-8.557 2.486c.315-2.254 1.686-4.873 3.928-7.114M5.46 5.459a9.24 9.24 0 0 1 8.554-2.485c-.314 2.253-1.685 4.872-3.926 7.114S5.227 13.7 2.973 14.015A9.24 9.24 0 0 1 5.46 5.459" />
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+                <hr class="text-[#272727] my-6">
+                <!-- button  -->
+                <button style="background: linear-gradient(180deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -382%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10))
+                         100%);"
+                    class="text-[15px] md:text-base text-white bg-[linear-gradient(180deg,_rgb(120,120,120)_0%,_rgb(10,10,10)_100%)] font-medium rounded-[100px] max-md:w-43 w-45 max-md:h-14 h-14.5 ">Connect
+                    with me</button>
+            </div>
+            <!-- right-side -->
+            <div style="box-shadow: 16px 24px 20px 8px #0006, inset 0 2px #b8b4b414;"
+                class="bg-[#0F0F0F] rounded-[16px] w-full xl:w-[603px] p-6 md:px-7.5 md:pb-13.5 md:pt-7.5 max-xl:mt-11">
+                <p class="text-[15px] md:text-base text-primary font-bold leading-7 md:leading-8">
+                    I'm Johan Beker, a dedicated Web Designer & Developer based in the
+                    <br class="max-xl:hidden">
+                    vibrant city of Berlin, Germany. I specialize in creative design with
+                    <br class="max-xl:hidden">
+                    seamless technical execution to craft exceptional digital experiences.
+                </p>
+                <!-- line  -->
+                <hr class="text-[#272727] my-8">
+                <!-- cetagories -->
+                <div class="flex gap-4 flex-wrap">
+                    <div class="text-third font-semibold px-3 py-2 ">Product Design</div>
+                    <div class="text-third font-semibold px-3 py-2 ">UX Design</div>
+                    <div class="text-third font-semibold px-3 py-2 ">UI Design</div>
+                    <div class="text-third font-semibold px-3 py-2 ">Framer</div>
+                    <div class="text-third font-semibold px-3 py-2 ">Branding</div>
+                    <div class="text-third font-semibold px-3 py-2 ">Webflow</div>
+                </div>
+                <!-- line  -->
+                <hr class="text-[#272727] mt-8">
+                <!-- table  -->
+                <table class="w-full border-separate  md:border-spacing-y-8">
+                    <tr class="max-md:flex max-md:flex-col max-md:mb-5 max-md:p-4">
+                        <td class="text-primary font-semibold max-md:py-1 md:p-4">Freelance</td>
+                        <td class="text-primary font-semibold max-md:py-1 md:p-4 md:pr-20">GreenLeaf Co</td>
+                        <td class="text-primary font-semibold max-md:py-1 md:py-4 md:pl-4">2021</td>
+                    </tr>
+                    <tr class="max-md:flex max-md:flex-col max-md:mb-5 max-md:p-4">
+                        <td class="text-primary font-semibold max-md:py-1 md:p-4">UX/UI Designer</td>
+                        <td class="text-primary font-semibold max-md:py-1 md:p-4 md:pr-20">UrbanFit Studio</td>
+                        <td class="text-primary font-semibold max-md:py-1 md:py-4 md:pl-4">2022</td>
+                    </tr>
+                    <tr class="max-md:flex max-md:flex-col max-md:mb-5 max-md:p-4">
+                        <td class="text-primary font-semibold max-md:py-1 md:p-4">Product Designer</td>
+                        <td class="text-primary font-semibold max-md:py-1 md:p-4 md:pr-20">PixelCraft Studios</td>
+                        <td class="text-primary font-semibold max-md:py-1 md:py-4 md:pl-4">2023</td>
+                    </tr>
+                    <tr class="max-md:flex max-md:flex-col max-md:p-4">
+                        <td class="text-primary font-semibold max-md:py-1 md:p-4">Graphic Designer</td>
+                        <td class="text-primary font-semibold max-md:py-1 md:p-4 md:pr-20">VistaWorks</td>
+                        <td class="text-primary font-semibold max-md:py-1 md:py-4 md:pl-4">2024</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </section>
+
     <script src="Scirpt.js"></script>
 </body>
 
