@@ -4,103 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Polo</title>
     <link rel="stylesheet" href="src/output.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+
 </head>
 
-<body class="bg-blac">
+<body>
 
-    <div class="flex justify-center relative top-0 right-0">
-        <!-- shooting-star-1  -->
-        <div style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);  "
-            class=" text-white relative rounded-[2px] w-35 h-[1px] mt-20 rotate-30">
-            <div style="box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 6px 1px;"
-                class="w-[3px] h-[2px] absolute right-0 -top-[0.5px]"></div>
-        </div>
-        <!-- shooting-star-2  -->
-        <div style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);  "
-            class=" text-white relative rounded-[2px] w-35 h-[1px] mt-20 rotate-30">
-            <div style="box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 6px 1px;"
-                class="w-[3px] h-[2px] absolute right-0 -top-[0.5px]"></div>
-        </div>
-        <!-- shooting-star-3  -->
-        <div style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);  "
-            class=" text-white relative rounded-[2px] w-35 h-[1px] mt-20 rotate-30">
-            <div style="box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 6px 1px;"
-                class="w-[3px] h-[2px] absolute right-0 -top-[0.5px]"></div>
-        </div>
-        <!-- shooting-star-4  -->
-        <div style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);  "
-            class=" text-white relative rounded-[2px] w-35 h-[1px] mt-20 rotate-30">
-            <div style="box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 6px 1px;"
-                class="w-[3px] h-[2px] absolute right-0 -top-[0.5px]"></div>
-        </div>
+    <section class="h-screen bg-amber-400"></section>
+    <section class="h-screen bg-amber-950"></section>
+    <section class="h-screen bg-blue-800"></section>
+    <nav id="nav" class=" h-30 w-full bg-fuchsia-900 fixed top-0"></nav>
+    <script>
+        let nav = document.querySelector('nav')
 
-    </div>
-    <table >
-        <tr class="">
-            <td>Company</td>
-            <td>Contact</td>
-            <td>Country</td>
-        </tr>
-        <tr class="">
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
-        </tr>
-        <tr class="">
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
-        </tr>
-    </table>
+        window.addEventListener('scroll', function () {
+            let scrollY = window.scrollY
+            console.log('you scroll to :', scrollY);
+            if (scrollY > 500) {
+                nav.classList.remove('bg-fuchsia-900')
+                nav.classList.add('bg-black')
+            }
+            if (scrollY < 500) {
+                nav.classList.add('bg-fuchsia-900')
+                nav.classList.remove('bg-black')
+            }
+        })
+    </script>
 
-    <!--   <div class="framer-jurclp" data-framer-name="Shooting Stars">
-        <div class="framer-1xb91t7-container"
-            style="will-change: transform; opacity: 0.00595087; transform: translateX(775.358px) translateY(323.066px) scale(0.900595) rotate(22.6deg);">
-            <div class="framer-QVjJF framer-1ansaoc framer-v-1ansaoc" data-framer-name="Primarry"
-                style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%); height: 1px; width: 50px; opacity: 1; border-radius: 2px;">
-                <div class="framer-rczvud" data-framer-name="shimmer"
-                    style="background-color: rgba(255, 255, 255, 0.2); opacity: 1; border-radius: 1px; box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 6px 1px;">
-                </div>
-            </div>
-        </div>
-           <div class="framer-1i0w92m-container"
-            style="will-change: transform; opacity: 0.0789112; transform: translateX(718.449px) translateY(299.354px) scale(1.18422) rotate(22.6deg);">
-            <div class="framer-QVjJF framer-1ansaoc framer-v-1ansaoc" data-framer-name="Primarry"
-                style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%); height: 100%; width: 100%; opacity: 1; border-radius: 2px;">
-                <div class="framer-rczvud" data-framer-name="shimmer"
-                    style="background-color: rgba(255, 255, 255, 0.2); opacity: 1; border-radius: 1px; box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 6px 1px;">
-                </div>
-            </div>
-        </div>
-        <div class="framer-1jn488y-container"
-            style="will-change: transform; opacity: 0.0100161; transform: translateX(772.187px) translateY(321.745px) scale(0.802003) rotate(22.6deg);">
-            <div class="framer-QVjJF framer-1ansaoc framer-v-1ansaoc" data-framer-name="Primarry"
-                style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%); height: 100%; width: 100%; opacity: 1; border-radius: 2px;">
-                <div class="framer-rczvud" data-framer-name="shimmer"
-                    style="background-color: rgba(255, 255, 255, 0.2); opacity: 1; border-radius: 1px; box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 6px 1px;">
-                </div>
-            </div>
-        </div>
-        <div class="framer-1xc8lci-container"
-            style="will-change: transform; opacity: 0.00384046; transform: translateX(777.004px) translateY(323.752px) scale(1.19923) rotate(22.6deg);">
-            <div class="framer-QVjJF framer-1ansaoc framer-v-1ansaoc" data-framer-name="Primarry"
-                style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%); height: 100%; width: 100%; opacity: 1; border-radius: 2px;">
-                <div class="framer-rczvud" data-framer-name="shimmer"
-                    style="background-color: rgba(255, 255, 255, 0.2); opacity: 1; border-radius: 1px; box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 6px 1px;">
-                </div>
-            </div>
-        </div>
-        <div class="framer-1dye2xh-container" style="will-change: transform; opacity: 1; transform: rotate(22.6deg);">
-            <div class="framer-QVjJF framer-1ansaoc framer-v-1ansaoc" data-framer-name="Primarry"
-                style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%); height: 100%; width: 100%; opacity: 1; border-radius: 2px;">
-                <div class="framer-rczvud" data-framer-name="shimmer"
-                    style="background-color: rgba(255, 255, 255, 0.2); opacity: 1; border-radius: 1px; box-shadow: rgba(255, 255, 255, 0.6) 0px 0px 6px 1px;">
-                </div>
-            </div>
-        </div>
-    </div> -->
 </body>
 
 </html>

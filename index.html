@@ -20,7 +20,7 @@
 <body class="box-border p-0 m-0 bg-[#080808]">
     <!-- custom cursor  -->
     <div style="transition: all 0.2s cubic-bezier(0, 0, 0.3642, 1)   ;"
-        class="custom-cursor size-[11px] bg-white rounded-full fixed z-60 -left-[4.5px] shadow-[0_0_30px_5px_rgba(255,255,0,0.2)] pointer-events-none overflow-hidden">
+        class="custom-cursor size-[11px] bg-white rounded-full fixed z-60 -left-[4.5px] shadow-[0_0_30px_5px_rgba(255,255,0,0.3)] pointer-events-none overflow-hidden">
         <div
             class="inner-cursor w-full h-full rounded-full bg-white/5 flex items-center justify-center shrink-0  text-white  backdrop-blur-[10px]">
             <span class="flex shrink-0">View project</span>
@@ -92,7 +92,7 @@
         </div>
     </nav>
     <!-- <Banner-1-section></Banner-1-section> -->
-    <section class="relative z-0 px-4.5 pt-30 pb-20 md:px-10 md:pt-40 md:pb-25 overflow-hidden">
+    <section class="relative z-0 px-4.5 pt-30 pb-20 md:px-10 md:pt-40 md:pb-25 overflow-hidden hidde">
         <!-- overlayer  -->
         <div class="bg-black/90 absolute left-0 top-0 w-full h-full "></div>
         <!-- shooting star -->
@@ -297,7 +297,7 @@
                     </div>
                     <!-- img-2  -->
                     <div style="box-shadow:rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="banner-img arow-container bg-[#0f0f0f] p-5 rounded-[20px] relative">
+                        class="banner-img arow-container bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px] relative">
                         <img class="w-full max-h-[161px] sm:max-h-[443px] md:h-[245px] rounded-[10px] bg-left object-cover"
                             src="img/Banner-img-2.avif" alt="">
                         <!-- arow icon  -->
@@ -324,7 +324,7 @@
                 <div class="flex flex-col gap-6 max-md:hidden">
                     <!-- img-3  -->
                     <div style="box-shadow:rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="banner-img arow-container relative bg-[#0f0f0f] p-5 rounded-[20px]">
+                        class="banner-img arow-container relative bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px]">
                         <img class="w-full h-[245px] rounded-[15px] object-cover bg-left" src="img/Banner-img-3.avif"
                             alt="">
                         <!-- arow icon  -->
@@ -348,7 +348,7 @@
                     </div>
                     <!-- img-4  -->
                     <div style="box-shadow:rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="banner-img arow-container relative bg-[#0f0f0f] p-5 rounded-[20px]">
+                        class="banner-img arow-container relative bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px]">
                         <img class="w-full h-[509px] rounded-[15px] object-cover" src="img/Banner-img-4.avif" alt="">
                         <!-- arow icon  -->
                         <a href="#"
@@ -386,7 +386,7 @@
         </span>
     </section>
     <!-- <Expert-Designer-section-2></Expert-Designer-section-2> -->
-    <section class="bg-[#0A0A0A] border border-[#272727] rounded-[16px] px-4.5 py-20 md:px-10 md:py-25">
+    <section class="bg-[#0A0A0A] border-t border-[#272727] rounded-[50px] px-4.5 py-20 md:px-10 md:py-25 hidde">
         <!-- main-heading  -->
         <div class="flex flex-col items-center gap-6">
             <!-- tag -->
@@ -420,14 +420,15 @@
             <div style="box-shadow: 16px 24px 20px 8px #0006, inset 0 2px #b8b4b414;"
                 class="bg-[#0F0F0] flex flex-col rounded-[16px] pb-8 px-6 pt-6">
                 <div class="relative">
+                    <!-- img -->
                     <img class="w-full xl:w-101 h-95.5 mb-6 object-cover" src="img/seciton-2-img-1.avif" alt="">
-
+                    <!-- Available animation  -->
                     <div class="flex items-center justify-center w-full absolute  bottom-11">
                         <span
                             class="size-7 bg-[#0A0E0A] flex items-center justify-center rounded-full  relative mr-2.5">
                             <span class="size-[6px] flex bg-[#31EE33] rounded-full"></span>
                             <span
-                                class="available  bg-[#31EE33]/20 rounded-full flex items-center justify-center absolute"></span>
+                                class="greenRadius  bg-[#31EE33]/25 rounded-full flex items-center justify-center absolute"></span>
                         </span>
                         <h5 class="text-white text-[12px] font-semibold    ">
                             Available for work</h5>
@@ -530,7 +531,872 @@
             </div>
         </div>
     </section>
-
+    <!-- <How-it-works-section-3></How-it-works-section-3> -->
+    <section
+        class="bg-[#080808]  border-t border-[#272727] rounded-[50px] flex flex-col items-center   max-md:px-4.5 max-md:py-20 max-xl:px-10 md:py-25  hidde">
+        <!-- main-heading  -->
+        <div class="flex flex-col items-center gap-6">
+            <!-- tag -->
+            <div
+                class="text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-[137.5px] py-1.5 px-4 rounded-full ">
+                <span
+                    class="inline-flex items-center justify-center border-y border-x-2 border-white rounded-full p-[1px]">
+                    <span class="size-[5px] bg-white rounded-full m-[0.5px]"></span>
+                </span>
+                <span style="word-spacing: 1px;" class="ml-1.5  flex shrink-0 tracking-[-0.5px]">How it works</span>
+            </div>
+            <!-- header  -->
+            <div class="flex flex-col gap-6">
+                <!-- heading  -->
+                <h1
+                    class="text-[40px] md:text-[44px] xl:text-[54px] text-white text-center leading-11 tracking-[-2px] font-2 ">
+                    Process
+                    <span class="text-primary">
+                        Is Everything
+                    </span>
+                </h1>
+                <!-- paragraph -->
+                <p class="text-primary text-center font-semibold ">
+                    Simple, streamlined process is what get's you results
+                </p>
+            </div>
+        </div>
+        <!-- scroll slider  -->
+        <div
+            class="max-xl:grid max-colg:grid-cols-1 max-xl:grid-cols-2  xl:flex xl:justify-center xl:items-center max-colg:items-center w-full max-colg:max-w-[540px] max-xl:max-w-[1090px]  gap-6 my-11 xl:overflow-hidden">
+            <!-- slide-1  -->
+            <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                class="bg-[#0F0F0F] rounded-[16px] relative p-5  md:p-7.5    xl:min-w-100 xl:w-135 ">
+                <!-- numbering  -->
+                <div style="box-shadow: rgba(184, 180, 180, 0.14) 0px 2px 0px 0px inset;"
+                    class="absolute top-3 right-3 bg-[#080808] text-white rounded-full size-9.5 flex items-center justify-center">
+                    1
+                </div>
+                <!-- icon -->
+                <div class="xl:mt-5 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 14 14">
+                        <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1">
+                            <path fill="#3F3F3F"
+                                d="M7.26 12.535L4.795 5.153a.5.5 0 0 1 .633-.633l7.382 2.463a.5.5 0 0 1-.009.951L9.557 8.953a.5.5 0 0 0-.328.327l-1.018 3.246a.5.5 0 0 1-.952.009" />
+                            <path
+                                d="m9.361 9.073l3.47 3.47M.852 3.625l1.673.449M1.562 7.65l1.225-1.224M3.788.69l.448 1.672M7.813 1.4L6.588 2.624" />
+                        </g>
+                    </svg>
+                </div>
+                <!-- heading  -->
+                <h3 class="text-white text-xl font-medium mb-2.5">Let's Get In Touch</h3>
+                <!-- paragrgh  -->
+                <p class="text-[15px] text-secondary font-medium xl:w-80">
+                    Start by reaching out through our contact page. Fill out the form or book a call to discuss your
+                    project, goals, and ideas.
+                </p>
+                <!-- line  -->
+                <hr class="text-[#272727] my-5 colg:my-6">
+                <!-- step  -->
+                <div
+                    class="text-[15px] text-secondary  font-medium rounded-full flex items-center justify-center border border-[#ffffff1a] w-[75px] h-[35px] xl:mb-5">
+                    Step 1
+                </div>
+            </div>
+            <!-- slide-2  -->
+            <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                class="bg-[#0F0F0F] rounded-[16px] relative p-5  md:p-7.5  xl:min-w-100 xl:w-135 ">
+                <!-- numbering  -->
+                <div style="box-shadow: rgba(184, 180, 180, 0.14) 0px 2px 0px 0px inset;"
+                    class="absolute top-3 right-3 bg-[#080808] text-white rounded-full size-9.5 flex items-center justify-center">
+                    2
+                </div>
+                <!-- icon -->
+                <div class="xl:mt-5 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                            d="M9 6h11M3.8 5.8l.8.8l2-2m-2.8 7.2l.8.8l2-2m-2.8 7.2l.8.8l2-2M9 12h11M9 18h11" />
+                    </svg>
+                </div>
+                <!-- heading  -->
+                <h3 class="text-white text-xl font-medium mb-2.5">Grab Your Designs</h3>
+                <!-- paragrgh  -->
+                <p class="text-[15px] text-secondary font-medium xl:w-73">
+                    Tell me your unique vision, and I’ll create stunning, functional design perfectly align with your
+                    goals
+                </p>
+                <!-- line  -->
+                <hr class="text-[#272727] my-5 colg:my-6">
+                <!-- step  -->
+                <div
+                    class="text-[15px] text-secondary  font-medium rounded-full flex items-center justify-center border border-[#ffffff1a] w-[75px] h-[35px] xl:mb-6">
+                    Step 2
+                </div>
+            </div>
+            <!-- slide-3  -->
+            <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                class="bg-[#0F0F0F] rounded-[16px] relative p-5  md:p-7.5 xl:min-w-100 xl:w-135 ">
+                <!-- numbering  -->
+                <div style="box-shadow: rgba(184, 180, 180, 0.14) 0px 2px 0px 0px inset;"
+                    class="absolute top-3 right-3 bg-[#080808] text-white rounded-full size-9.5 flex items-center justify-center">
+                    3
+                </div>
+                <!-- icon -->
+                <div class="xl:mt-5 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 256 256">
+                        <g fill="#fff">
+                            <path d="M176 112L74.34 213.66a8 8 0 0 1-11.31 0L42.34 193a8 8 0 0 1 0-11.31L144 80Z"
+                                opacity="0.4" />
+                            <path
+                                d="M248 152a8 8 0 0 1-8 8h-16v16a8 8 0 0 1-16 0v-16h-16a8 8 0 0 1 0-16h16v-16a8 8 0 0 1 16 0v16h16a8 8 0 0 1 8 8M56 72h16v16a8 8 0 0 0 16 0V72h16a8 8 0 0 0 0-16H88V40a8 8 0 0 0-16 0v16H56a8 8 0 0 0 0 16m128 120h-8v-8a8 8 0 0 0-16 0v8h-8a8 8 0 0 0 0 16h8v8a8 8 0 0 0 16 0v-8h8a8 8 0 0 0 0-16m35.31-112L80 219.31a16 16 0 0 1-22.62 0l-20.7-20.68a16 16 0 0 1 0-22.63L176 36.69a16 16 0 0 1 22.63 0l20.68 20.68a16 16 0 0 1 0 22.63m-54.63 32L144 91.31l-96 96L68.68 208ZM208 68.69L187.31 48l-32 32L176 100.69Z" />
+                        </g>
+                    </svg>
+                </div>
+                <!-- heading  -->
+                <h3 class="text-white text-xl font-medium mb-2.5">Kickstart Development</h3>
+                <!-- paragrgh  -->
+                <p class="text-[15px] text-secondary font-medium xl:w-73">
+                    I expertly transform your designs into a powerful, scalable solution, fully ready to launch
+                </p>
+                <!-- line  -->
+                <hr class="text-[#272727] my-5 colg:my-6">
+                <!-- step  -->
+                <div
+                    class="text-[15px] text-secondary  font-medium rounded-full flex items-center justify-center border border-[#ffffff1a] w-[75px] h-[35px] xl:mb-5">
+                    Step 3
+                </div>
+            </div>
+            <!-- slide-4  -->
+            <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                class="bg-[#0F0F0F] rounded-[16px] relative p-5  md:p-7.5 xl:min-w-100 xl:w-135 ">
+                <!-- numbering  -->
+                <div style="box-shadow: rgba(184, 180, 180, 0.14) 0px 2px 0px 0px inset;"
+                    class="absolute top-3 right-3 bg-[#080808] text-white rounded-full size-9.5 flex items-center justify-center">
+                    4
+                </div>
+                <!-- icon -->
+                <div class="xl:mt-5 mb-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 24 24">
+                        <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <path
+                                d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2" />
+                            <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0m1 7v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+                        </g>
+                    </svg>
+                </div>
+                <!-- heading  -->
+                <h3 class="text-white text-xl font-medium mb-2.5">And Hand Over</h3>
+                <!-- paragrgh  -->
+                <p class="text-[15px] text-secondary font-medium xl:w-73">
+                    Receive a fully tested, polished, and high-quality product tailored to your needs with ongoing
+                    support
+                </p>
+                <!-- line  -->
+                <hr class="text-[#272727] my-5 colg:my-6">
+                <!-- step  -->
+                <div
+                    class="text-[15px] text-secondary  font-medium rounded-full flex items-center justify-center border border-[#ffffff1a] w-[75px] h-[35px] xl:mb-5">
+                    Step 4
+                </div>
+            </div>
+        </div>
+        <!-- bottom  -->
+        <div class="flex justify-center">
+            <div style="box-shadow: 16px 24px 20px 8px #0006, inset 0 2px #b8b4b414;"
+                class="bg-[#0F0F0F] flex max-xl:flex-col items-center rounded-[20px] gap-6 max-coxs:max-w-71 py-5 p-5 md:p-6 ">
+                <!-- left-side -->
+                <div class=" max-xl:flex flex-col items-center">
+                    <!-- heading -->
+                    <div class="flex max-md:flex-col items-center gap-2.5 mb-2.5">
+                        <!-- icon  -->
+                        <span>
+                            <svg class="size-[25px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"
+                                focusable="false"
+                                color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
+                                style="user-select: none; display: inline-block; fill: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); color: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); flex-shrink: 0;">
+                                <g color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
+                                    weight="duotone">
+                                    <path d="M224,128a96,96,0,1,1-96-96A96,96,0,0,1,224,128Z" opacity="0.2"></path>
+                                    <path
+                                        d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216ZM80,108a12,12,0,1,1,12,12A12,12,0,0,1,80,108Zm104,0a8,8,0,0,1-8,8H152a8,8,0,0,1,0-16h24A8,8,0,0,1,184,108Zm-9.08,48c-10.29,17.79-27.39,28-46.92,28s-36.63-10.2-46.92-28a8,8,0,1,1,13.84-8c7.47,12.91,19.21,20,33.08,20s25.61-7.1,33.08-20a8,8,0,1,1,13.84,8Z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </span>
+                        <!-- heading -->
+                        <h3 class="text-white text-xl text-center font-semibold">I am with you in every step</h3>
+                    </div>
+                    <!-- paragraph -->
+                    <p class="text-primary text-[15px] text-center font-semibold">alongside you at each step for
+                        seamless experience
+                    </p>
+                </div>
+                <!-- right-side -->
+                <div class="mx-[24px]">
+                    <!-- button  -->
+                    <div class=" flex max-sm:flex-col items-center max-sm:items-start gap-4 -mt-[2px]">
+                        <!-- button-1  -->
+                        <button style="background: linear-gradient(180deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -382%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10))
+                         100%);"
+                            class="text-[15px] md:text-base text-white bg-[linear-gradient(180deg,_rgb(120,120,120)_0%,_rgb(10,10,10)_100%)] font-semibold rounded-[100px] max-sm:w-[260px] max-md:w70 h-14.5 px-[26px] py-[13px]">See
+                            All Projects</button>
+                        <!-- button-2  -->
+                        <button style="background: linear-gradient(180deg, var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))  0%, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120,
+                        120)) 140%)"
+                            class="text-[15px] md:text-base text-[#080808] bg-[linear-gradient(180deg,_white_0%,_rgb(120,120,120)_100%)] font-semibold rounded-[100px] max-sm:w-[260px] max-md:w70 h-14.5 px-[26px] py-[13px]">Contact
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <Design-services-section-4></Design-services-section-4> -->
+    <section class="bg-[#0A0A0A] border-t border-[#272727] rounded-[50px] px-4.5 py-20 md:px-10 md:py-25 hidde">
+        <div class=" max-w-[1100px] mx-auto">
+            <!-- header-div -->
+            <div class="flex justify-center w-full">
+                <!-- header  -->
+                <div class="flex max-xl:flex-col max-xl:gap-6 xl:justify-between w-full">
+                    <div class="flex flex-col gap-6">
+                        <!-- tag -->
+                        <div
+                            class="text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-39.5 py-1.5 px-4 rounded-full">
+                            <span
+                                class="inline-flex items-center justify-center border-y border-x-2 border-white rounded-full p-[1px]">
+                                <span class="size-[5px] bg-white rounded-full m-[0.5px]"></span>
+                            </span>
+                            <span style="word-spacing: 1px;" class="ml-1.5  flex shrink-0 tracking-[-0.5px]">Design
+                                services</span>
+                        </div>
+                        <!-- main-heading  -->
+                        <div class="flex flex-col gap-4">
+                            <!-- heading  -->
+                            <div class="flex items-center  gap-4 ">
+                                <h1
+                                    class="text-white text-[40px] md:text-[44px] xl:text-[54px] font-2 -mt-1.5 tracking-[-2px]">
+                                    Design
+                                    <span class="text-primary">Services</span>
+                                </h1>
+                            </div>
+                            <!-- paragraph -->
+                            <div class="text-[15px] md:text-base text-primary  font-semibold leading-7.5 -mt-[9px]">I'm
+                                a
+                                Explore a suite of designs services to elevate your brand.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-end">
+                        <!-- button -->
+                        <button
+                            style="background: linear-gradient(180deg, var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))  0%, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120,120)) 140%)"
+                            class="text-[15px] md:text-base text-[#080808] bg-[linear-gradient(180deg,_white_0%,_rgb(120,120,120)_100%)] font-semibold rounded-[100px] h-14.5 px-[26px] py-[13px]">Contact
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+            <!-- main-content  -->
+            <div class="my-11">
+                <div class="flex max-xl:flex-col gap-5">
+                    <!-- 1-column  -->
+                    <div class="flex flex-col gap-6 xl:w-[540px]">
+                        <!-- block-1  -->
+                        <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                            class="bg-[#0F0F0F] flex flex-col gap-6 rounded-[20px] p-7.5">
+                            <!-- header  -->
+                            <div class="flex flex-col gap-4">
+                                <!-- heading  -->
+                                <div class="flex items-center gap-2.5">
+                                    <!-- icon  -->
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px"
+                                            viewBox="0 0 256 256">
+                                            <path fill="#fff"
+                                                d="M216 42H40a14 14 0 0 0-14 14v144a14 14 0 0 0 14 14h176a14 14 0 0 0 14-14V56a14 14 0 0 0-14-14M40 54h176a2 2 0 0 1 2 2v42H38V56a2 2 0 0 1 2-2m-2 146v-90h60v92H40a2 2 0 0 1-2-2m178 2H110v-92h108v90a2 2 0 0 1-2 2" />
+                                        </svg>
+                                    </span>
+                                    <!-- heading -->
+                                    <h3 class="text-white text-xl font-semibold">Website Design</h3>
+                                </div>
+                                <!-- paragragh -->
+                                <p class="text-[15px] text-secondary font-semibold font-3">Designing breathtaking,
+                                    user-centric
+                                    engagement, conversions, and growth,
+                                    perfectly webs aligned with your brand</p>
+                            </div>
+                            <!-- img  -->
+                            <img class="object-cover" src="img/section-4-img-1.avif" alt="">
+                        </div>
+                        <!-- block-2  -->
+                        <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                            class="bg-[#0F0F0F] rounded-[20px] p-7.5">
+                            <div class="flex items-center gap-2.5">
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex items-center gap-2.5">
+                                        <!-- icon  -->
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px"
+                                                viewBox="0 0 256 256">
+                                                <g fill="#fff">
+                                                    <path d="M200 168v32H72V72h32a96 96 0 0 1 96 96" opacity="0.4" />
+                                                    <path
+                                                        d="M96 72a8 8 0 0 1 8-8a104.11 104.11 0 0 1 104 104a8 8 0 0 1-16 0a88.1 88.1 0 0 0-88-88a8 8 0 0 1-8-8m144 120H80V32a8 8 0 0 0-16 0v32H32a8 8 0 0 0 0 16h32v120a8 8 0 0 0 8 8h168a8 8 0 0 0 0-16" />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <!-- heading -->
+                                        <h3 class="text-white text-xl font-medium">Graphic Design</h3>
+                                    </div>
+                                    <!-- paragragh -->
+                                    <p class="text-[15px] text-secondary font-semibold font-3">Crafting bold, engaging,
+                                        and
+                                        versatile graphic designs that elevate your brand and captivate your audience
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2-column  -->
+                    <div class="flex flex-col gap-6 xl:w-[540px]">
+                        <!-- block-1  -->
+                        <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                            class="bg-[#0F0F0F] rounded-[20px] p-7.5">
+                            <div class="flex items-center gap-2.5">
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex items-center gap-2.5">
+                                        <!-- icon  -->
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px"
+                                                viewBox="0 0 256 256">
+                                                <g fill="#fff">
+                                                    <path d="M200 168v32H72V72h32a96 96 0 0 1 96 96" opacity="0.4" />
+                                                    <path
+                                                        d="M96 72a8 8 0 0 1 8-8a104.11 104.11 0 0 1 104 104a8 8 0 0 1-16 0a88.1 88.1 0 0 0-88-88a8 8 0 0 1-8-8m144 120H80V32a8 8 0 0 0-16 0v32H32a8 8 0 0 0 0 16h32v120a8 8 0 0 0 8 8h168a8 8 0 0 0 0-16" />
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <!-- heading -->
+                                        <h3 class="text-white text-xl font-semibold">Logo Design</h3>
+                                    </div>
+                                    <!-- paragragh -->
+                                    <p class="text-[15px] text-secondary font-semibold font-3">Crafting distinctive,
+                                        scalable,
+                                        and impactful logos that embody your brand’s identity and vision
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- block-2  -->
+                        <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                            class="bg-[#0F0F0F] flex flex-col gap-6 rounded-[20px] p-7.5 ">
+                            <!-- header  -->
+                            <div class="flex flex-col gap-4">
+                                <!-- heading  -->
+                                <div class="flex items-center gap-2.5">
+                                    <!-- icon  -->
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px"
+                                            viewBox="0 0 256 256">
+                                            <g fill="#fff">
+                                                <path d="M200 104h-72L56 40h144ZM56 168l72 72v-72h72l-72-64H56Z"
+                                                    opacity="0.2" />
+                                                <path
+                                                    d="M208 104V40a8 8 0 0 0-8-8H56a8 8 0 0 0-5.31 14L107 96H56a8 8 0 0 0-8 8v64a8 8 0 0 0 2.34 5.66l72 72A8 8 0 0 0 136 240v-64h64a8 8 0 0 0 5.31-14L149 112h51a8 8 0 0 0 8-8m-29 56h-51a8 8 0 0 0-8 8v52.69l-56-56V112h61Zm13-64h-61L77 48h115Z" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                    <!-- heading -->
+                                    <h3 class="text-white text-xl font-semibold">Framer Design</h3>
+                                </div>
+                                <!-- paragragh -->
+                                <p class="text-[15px] text-secondary font-semibold font-3">Bringing ideas to life with
+                                    interactive, user-centered Framer designs that simplify complexity and elevate user
+                                    experience</p>
+                            </div>
+                            <!-- img-wrapper  -->
+                            <div class="relative overflow-hidden">
+                                <!-- Left edge gradient -->
+                                <div
+                                    class="absolute left-0 top-0 h-full w-10 colg:w-30 xl:w-17 z-10 pointer-events-none">
+                                    <div class="w-full h-full bg-gradient-to-r from-black/100 to-transparent ">
+                                    </div>
+                                </div>
+                                <!-- Right edge gradient -->
+                                <div
+                                    class="absolute right-0 top-0 h-full w-10 colg:w-30 xl:w-17 z-10 pointer-events-none">
+                                    <div class="w-full h-full bg-gradient-to-l from-black/100 to-transparent ">
+                                    </div>
+                                </div>
+                                <!-- imgs  -->
+                                <div class="sliding-animation flex gap-2.5  w-max">
+                                    <!-- img-1  -->
+                                    <img class="w-79 h-58 rounded-[13px] object-cover" src="img/section-4-img-2.avif"
+                                        alt="">
+                                    <!-- img-2  -->
+                                    <img class="w-79 h-58 rounded-[13px] object-cover" src="img/section-4-img-3.avif"
+                                        alt="">
+                                    <!-- img-3  -->
+                                    <img class="w-79 h-58 rounded-[13px] object-cover" src="img/section-4-img-4.avif"
+                                        alt="">
+                                    <!-- dublicate-img  -->
+                                    <!-- img-1  -->
+                                    <img class="w-79 h-58 rounded-[13px] object-cover" src="img/section-4-img-2.avif"
+                                        alt="">
+                                    <!-- img-2  -->
+                                    <img class="w-79 h-58 rounded-[13px] object-cover" src="img/section-4-img-3.avif"
+                                        alt="">
+                                    <!-- img-3  -->
+                                    <img class="w-79 h-58 rounded-[13px] object-cover" src="img/section-4-img-4.avif"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- animate-sliders-2  -->
+            <div class="flex flex-col mt-11 overflow-hidden">
+                <!-- wrapper-animate-slider-1  -->
+                <div class="relative">
+                    <!-- left edge gradient -->
+                    <div class="absolute left-0 top-0 h-full w-30  xl:w-17 z-10 pointer-events-none">
+                        <div class="w-full h-full bg-gradient-to-r from-black/100 to-transparent ">
+                        </div>
+                    </div>
+                    <!-- Right edge gradient -->
+                    <div class="absolute right-0 top-0 h-full w-30  xl:w-17 z-10 pointer-events-none">
+                        <div class="w-full h-full bg-gradient-to-l from-black/100 to-transparent ">
+                        </div>
+                    </div>
+                    <!-- animate-slider-1  -->
+                    <div class="sliding-animation-2 flex gap-3 items-center w-max whitespace-nowrap p-2.5">
+                        <!-- item-1  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 512 512">
+                                    <rect width="416" height="352" x="48" y="80" fill="none" stroke="#fff"
+                                        stroke-linejoin="round" stroke-width="32" rx="48" ry="48" />
+                                    <circle cx="336" cy="176" r="32" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                        stroke-width="32" />
+                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="32"
+                                        d="m304 335.79l-90.66-90.49a32 32 0 0 0-43.87-1.3L48 352m176 80l123.34-123.34a32 32 0 0 1 43.11-2L464 368" />
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Posters</h3>
+                        </span>
+                        <!-- item-2  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M20 17H4m13-3s3 2.21 3 3s-3 3-3 3M5 7h15M7 4S4 6.21 4 7s3 3 3 3" />
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Framer Migration</h3>
+                        </span>
+                        <!-- item-3  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 256 256">
+                                    <g fill="#fff">
+                                        <path
+                                            d="M216 48H40a8 8 0 0 0-8 8v112a8 8 0 0 0 8 8h176a8 8 0 0 0 8-8V56a8 8 0 0 0-8-8m-104 96V80l48 32Z"
+                                            opacity="0.4" />
+                                        <path
+                                            d="m164.44 105.34l-48-32A8 8 0 0 0 104 80v64a8 8 0 0 0 12.44 6.66l48-32a8 8 0 0 0 0-13.32M120 129.05V95l25.58 17ZM216 40H40a16 16 0 0 0-16 16v112a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16m0 128H40V56h176zm16 40a8 8 0 0 1-8 8H32a8 8 0 0 1 0-16h192a8 8 0 0 1 8 8" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Video & Motion Graphics</h3>
+                        </span>
+                        <!-- item-4  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 14 14">
+                                    <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1">
+                                        <path
+                                            d="M8 .5H1.5a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1V8m-11 2.5h11M3.5 3h2m-2 2.5h1" />
+                                        <path
+                                            d="m8.994 7.506l-3 .54l.5-3.04l4.23-4.21a1 1 0 0 1 1.42 0l1.06 1.06a1 1 0 0 1 0 1.42z" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Copywriting</h3>
+                        </span>
+                        <!-- dublicate-item-1 -->
+                        <!-- item-1  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 512 512">
+                                    <rect width="416" height="352" x="48" y="80" fill="none" stroke="#fff"
+                                        stroke-linejoin="round" stroke-width="32" rx="48" ry="48" />
+                                    <circle cx="336" cy="176" r="32" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                        stroke-width="32" />
+                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="32"
+                                        d="m304 335.79l-90.66-90.49a32 32 0 0 0-43.87-1.3L48 352m176 80l123.34-123.34a32 32 0 0 1 43.11-2L464 368" />
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Posters</h3>
+                        </span>
+                        <!-- item-2  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M20 17H4m13-3s3 2.21 3 3s-3 3-3 3M5 7h15M7 4S4 6.21 4 7s3 3 3 3" />
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Framer Migration</h3>
+                        </span>
+                        <!-- item-3  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 256 256">
+                                    <g fill="#fff">
+                                        <path
+                                            d="M216 48H40a8 8 0 0 0-8 8v112a8 8 0 0 0 8 8h176a8 8 0 0 0 8-8V56a8 8 0 0 0-8-8m-104 96V80l48 32Z"
+                                            opacity="0.4" />
+                                        <path
+                                            d="m164.44 105.34l-48-32A8 8 0 0 0 104 80v64a8 8 0 0 0 12.44 6.66l48-32a8 8 0 0 0 0-13.32M120 129.05V95l25.58 17ZM216 40H40a16 16 0 0 0-16 16v112a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16m0 128H40V56h176zm16 40a8 8 0 0 1-8 8H32a8 8 0 0 1 0-16h192a8 8 0 0 1 8 8" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Video & Motion Graphics</h3>
+                        </span>
+                        <!-- item-4  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 14 14">
+                                    <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1">
+                                        <path
+                                            d="M8 .5H1.5a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1V8m-11 2.5h11M3.5 3h2m-2 2.5h1" />
+                                        <path
+                                            d="m8.994 7.506l-3 .54l.5-3.04l4.23-4.21a1 1 0 0 1 1.42 0l1.06 1.06a1 1 0 0 1 0 1.42z" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Copywriting</h3>
+                        </span>
+                        <!-- dublicate-item-2  -->
+                        <!-- item-1  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 512 512">
+                                    <rect width="416" height="352" x="48" y="80" fill="none" stroke="#fff"
+                                        stroke-linejoin="round" stroke-width="32" rx="48" ry="48" />
+                                    <circle cx="336" cy="176" r="32" fill="none" stroke="#fff" stroke-miterlimit="10"
+                                        stroke-width="32" />
+                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="32"
+                                        d="m304 335.79l-90.66-90.49a32 32 0 0 0-43.87-1.3L48 352m176 80l123.34-123.34a32 32 0 0 1 43.11-2L464 368" />
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Posters</h3>
+                        </span>
+                        <!-- item-2  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                    <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M20 17H4m13-3s3 2.21 3 3s-3 3-3 3M5 7h15M7 4S4 6.21 4 7s3 3 3 3" />
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Framer Migration</h3>
+                        </span>
+                        <!-- item-3  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 256 256">
+                                    <g fill="#fff">
+                                        <path
+                                            d="M216 48H40a8 8 0 0 0-8 8v112a8 8 0 0 0 8 8h176a8 8 0 0 0 8-8V56a8 8 0 0 0-8-8m-104 96V80l48 32Z"
+                                            opacity="0.4" />
+                                        <path
+                                            d="m164.44 105.34l-48-32A8 8 0 0 0 104 80v64a8 8 0 0 0 12.44 6.66l48-32a8 8 0 0 0 0-13.32M120 129.05V95l25.58 17ZM216 40H40a16 16 0 0 0-16 16v112a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16m0 128H40V56h176zm16 40a8 8 0 0 1-8 8H32a8 8 0 0 1 0-16h192a8 8 0 0 1 8 8" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Video & Motion Graphics</h3>
+                        </span>
+                        <!-- item-4  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 14 14">
+                                    <g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1">
+                                        <path
+                                            d="M8 .5H1.5a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h9a1 1 0 0 0 1-1V8m-11 2.5h11M3.5 3h2m-2 2.5h1" />
+                                        <path
+                                            d="m8.994 7.506l-3 .54l.5-3.04l4.23-4.21a1 1 0 0 1 1.42 0l1.06 1.06a1 1 0 0 1 0 1.42z" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Copywriting</h3>
+                        </span>
+                    </div>
+                </div>
+                <!-- wrapper-animate-slider-2  -->
+                <div class="relative">
+                    <!-- left edge gradient -->
+                    <div class="absolute left-0 top-0 h-full w-30  xl:w-17 z-10 pointer-events-none">
+                        <div class="w-full h-full bg-gradient-to-r from-black/100 to-transparent ">
+                        </div>
+                    </div>
+                    <!-- Right edge gradient -->
+                    <div class="absolute right-0 top-0 h-full w-30  xl:w-17 z-10 pointer-events-none">
+                        <div class="w-full h-full bg-gradient-to-l from-black/100 to-transparent ">
+                        </div>
+                    </div>
+                    <!-- animate-slider-2  -->
+                    <div class="sliding-animation-3 flex gap-3 items-center w-max whitespace-nowrap p-2.5">
+                        <!-- item-1  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg class="text-white size-[20px]" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false">
+                                    <path
+                                        d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Icons</h3>
+                        </span>
+                        <!-- item-2  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg class="rotate-z-180 rotate-x-180" xmlns="http://www.w3.org/2000/svg" width="20px"
+                                    height="20px" viewBox="0 0 24 24">
+                                    <path fill="#fff"
+                                        d="M12 8H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h1v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h3l5 4V4zm3 7.6L13 14H4v-4h9l2-1.6zm6.5-3.6c0 1.71-.96 3.26-2.5 4V8c1.53.75 2.5 2.3 2.5 4" />
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Social Media</h3>
+                        </span>
+                        <!-- item-3  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 256 256">
+                                    <g fill="#fff">
+                                        <path d="M104 104v104H40a8 8 0 0 1-8-8v-96Z" opacity="0.4" />
+                                        <path
+                                            d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16m0 16v40H40V56ZM40 112h56v88H40Zm176 88H112v-88h104z" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Landing pages</h3>
+                        </span>
+                        <!-- item-4  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 20 20">
+                                    <g fill="#fff">
+                                        <path
+                                            d="M12.187 10H16a.5.5 0 0 1 .325.88l-4.958 4.241l-5.024 4.743c-.39.368-1.007-.053-.807-.55L8.474 12H6a.5.5 0 0 1-.46-.697l3-7A.5.5 0 0 1 9 4h5a.5.5 0 0 1 .46.697z"
+                                            opacity="0.4" />
+                                        <path fill-rule="evenodd"
+                                            d="M15 8.5h-3.813l2.273-5.303A.5.5 0 0 0 13 2.5H8a.5.5 0 0 0-.46.303l-3 7A.5.5 0 0 0 5 10.5h2.474l-2.938 7.314c-.2.497.417.918.807.55l5.024-4.743l4.958-4.241A.5.5 0 0 0 15 8.5m-4.571 1h3.217l-3.948 3.378l-3.385 3.195l2.365-5.887a.5.5 0 0 0-.464-.686H5.758l2.572-6h3.912L9.969 8.803a.5.5 0 0 0 .46.697"
+                                            clip-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Optimization</h3>
+                        </span>
+                        <!-- item-5  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                    <path fill="#fff"
+                                        d="m23 12l-5.45 6.5L16 17.21L20.39 12L16 6.79l1.55-1.29zM8 6.79L6.45 5.5L1 12l5.45 6.5L8 17.21L3.61 12zm.45 14.61l1.93.52L15.55 2.6l-1.93-.52z" />
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Custom code</h3>
+                        </span>
+                        <!-- item-6  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                        <path fill="#fff" fill-opacity="0.16"
+                                            d="M11 19a8 8 0 1 0 0-16a8 8 0 0 0 0 16" />
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-width="1"
+                                            d="m21 21l-4-4m2-6a8 8 0 1 1-16 0a8 8 0 0 1 16 0" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">SEO</h3>
+                        </span>
+                        <!-- dublicate-items-1 -->
+                        <!-- item-1  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg class="text-white size-[20px]" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false">
+                                    <path
+                                        d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Icons</h3>
+                        </span>
+                        <!-- item-2  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg class="rotate-z-180 rotate-x-180" xmlns="http://www.w3.org/2000/svg" width="20px"
+                                    height="20px" viewBox="0 0 24 24">
+                                    <path fill="#fff"
+                                        d="M12 8H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h1v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h3l5 4V4zm3 7.6L13 14H4v-4h9l2-1.6zm6.5-3.6c0 1.71-.96 3.26-2.5 4V8c1.53.75 2.5 2.3 2.5 4" />
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Social Media</h3>
+                        </span>
+                        <!-- item-3  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 256 256">
+                                    <g fill="#fff">
+                                        <path d="M104 104v104H40a8 8 0 0 1-8-8v-96Z" opacity="0.4" />
+                                        <path
+                                            d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16m0 16v40H40V56ZM40 112h56v88H40Zm176 88H112v-88h104z" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Landing pages</h3>
+                        </span>
+                        <!-- item-4  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 20 20">
+                                    <g fill="#fff">
+                                        <path
+                                            d="M12.187 10H16a.5.5 0 0 1 .325.88l-4.958 4.241l-5.024 4.743c-.39.368-1.007-.053-.807-.55L8.474 12H6a.5.5 0 0 1-.46-.697l3-7A.5.5 0 0 1 9 4h5a.5.5 0 0 1 .46.697z"
+                                            opacity="0.4" />
+                                        <path fill-rule="evenodd"
+                                            d="M15 8.5h-3.813l2.273-5.303A.5.5 0 0 0 13 2.5H8a.5.5 0 0 0-.46.303l-3 7A.5.5 0 0 0 5 10.5h2.474l-2.938 7.314c-.2.497.417.918.807.55l5.024-4.743l4.958-4.241A.5.5 0 0 0 15 8.5m-4.571 1h3.217l-3.948 3.378l-3.385 3.195l2.365-5.887a.5.5 0 0 0-.464-.686H5.758l2.572-6h3.912L9.969 8.803a.5.5 0 0 0 .46.697"
+                                            clip-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Optimization</h3>
+                        </span>
+                        <!-- item-5  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                    <path fill="#fff"
+                                        d="m23 12l-5.45 6.5L16 17.21L20.39 12L16 6.79l1.55-1.29zM8 6.79L6.45 5.5L1 12l5.45 6.5L8 17.21L3.61 12zm.45 14.61l1.93.52L15.55 2.6l-1.93-.52z" />
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Custom code</h3>
+                        </span>
+                        <!-- item-6  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                        <path fill="#fff" fill-opacity="0.16"
+                                            d="M11 19a8 8 0 1 0 0-16a8 8 0 0 0 0 16" />
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-width="1"
+                                            d="m21 21l-4-4m2-6a8 8 0 1 1-16 0a8 8 0 0 1 16 0" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">SEO</h3>
+                        </span>
+                        <!-- dublicate-items-2 -->
+                        <!-- item-1  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg class="text-white size-[20px]" fill="currentColor"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false">
+                                    <path
+                                        d="M197.58,129.06,146,110l-19-51.62a15.92,15.92,0,0,0-29.88,0L78,110l-51.62,19a15.92,15.92,0,0,0,0,29.88L78,178l19,51.62a15.92,15.92,0,0,0,29.88,0L146,178l51.62-19a15.92,15.92,0,0,0,0-29.88ZM137,164.22a8,8,0,0,0-4.74,4.74L112,223.85,91.78,169A8,8,0,0,0,87,164.22L32.15,144,87,123.78A8,8,0,0,0,91.78,119L112,64.15,132.22,119a8,8,0,0,0,4.74,4.74L191.85,144ZM144,40a8,8,0,0,1,8-8h16V16a8,8,0,0,1,16,0V32h16a8,8,0,0,1,0,16H184V64a8,8,0,0,1-16,0V48H152A8,8,0,0,1,144,40ZM248,88a8,8,0,0,1-8,8h-8v8a8,8,0,0,1-16,0V96h-8a8,8,0,0,1,0-16h8V72a8,8,0,0,1,16,0v8h8A8,8,0,0,1,248,88Z">
+                                    </path>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Icons</h3>
+                        </span>
+                        <!-- item-2  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg class="rotate-z-180 rotate-x-180" xmlns="http://www.w3.org/2000/svg" width="20px"
+                                    height="20px" viewBox="0 0 24 24">
+                                    <path fill="#fff"
+                                        d="M12 8H4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h1v4a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-4h3l5 4V4zm3 7.6L13 14H4v-4h9l2-1.6zm6.5-3.6c0 1.71-.96 3.26-2.5 4V8c1.53.75 2.5 2.3 2.5 4" />
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Social Media</h3>
+                        </span>
+                        <!-- item-3  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px"
+                                    viewBox="0 0 256 256">
+                                    <g fill="#fff">
+                                        <path d="M104 104v104H40a8 8 0 0 1-8-8v-96Z" opacity="0.4" />
+                                        <path
+                                            d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h176a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16m0 16v40H40V56ZM40 112h56v88H40Zm176 88H112v-88h104z" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Landing pages</h3>
+                        </span>
+                        <!-- item-4  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 20 20">
+                                    <g fill="#fff">
+                                        <path
+                                            d="M12.187 10H16a.5.5 0 0 1 .325.88l-4.958 4.241l-5.024 4.743c-.39.368-1.007-.053-.807-.55L8.474 12H6a.5.5 0 0 1-.46-.697l3-7A.5.5 0 0 1 9 4h5a.5.5 0 0 1 .46.697z"
+                                            opacity="0.4" />
+                                        <path fill-rule="evenodd"
+                                            d="M15 8.5h-3.813l2.273-5.303A.5.5 0 0 0 13 2.5H8a.5.5 0 0 0-.46.303l-3 7A.5.5 0 0 0 5 10.5h2.474l-2.938 7.314c-.2.497.417.918.807.55l5.024-4.743l4.958-4.241A.5.5 0 0 0 15 8.5m-4.571 1h3.217l-3.948 3.378l-3.385 3.195l2.365-5.887a.5.5 0 0 0-.464-.686H5.758l2.572-6h3.912L9.969 8.803a.5.5 0 0 0 .46.697"
+                                            clip-rule="evenodd" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Optimization</h3>
+                        </span>
+                        <!-- item-5  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                    <path fill="#fff"
+                                        d="m23 12l-5.45 6.5L16 17.21L20.39 12L16 6.79l1.55-1.29zM8 6.79L6.45 5.5L1 12l5.45 6.5L8 17.21L3.61 12zm.45 14.61l1.93.52L15.55 2.6l-1.93-.52z" />
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">Custom code</h3>
+                        </span>
+                        <!-- item-6  -->
+                        <span class="flex items-center gap-2.5 px-4 py-3">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24">
+                                    <g fill="none">
+                                        <path fill="#fff" fill-opacity="0.16"
+                                            d="M11 19a8 8 0 1 0 0-16a8 8 0 0 0 0 16" />
+                                        <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-miterlimit="10" stroke-width="1"
+                                            d="m21 21l-4-4m2-6a8 8 0 1 1-16 0a8 8 0 0 1 16 0" />
+                                    </g>
+                                </svg>
+                            </span>
+                            <h3 class="text-primary font-semibold">SEO</h3>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="Scirpt.js"></script>
 </body>
 

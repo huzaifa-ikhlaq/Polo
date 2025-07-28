@@ -59,11 +59,11 @@ body {
         opacity: 1;
     }
 
-    60% {
+    50% {
         opacity: 1;
     }
 
-    61% {
+    51% {
         opacity: 0.5;
     }
 
@@ -84,11 +84,11 @@ body {
         opacity: 1;
     }
 
-    60% {
+    50% {
         opacity: 1;
     }
 
-    61% {
+    51% {
         opacity: 0.5;
     }
 
@@ -276,24 +276,74 @@ body {
 }
 
 /* available animation  */
-
-.available {
-    animation: available 0.5s 2s infinite linear;
+.greenRadius {
+    width: 0px;
+    height: 0px;
+    pointer-events: none;
 }
 
-@keyframes available {
+.greenRadiusSpread {
+    animation: greenRadius 0.5s linear;
+}
+
+@keyframes greenRadius {
     0% {
         width: 0px;
         height: 0px;
     }
 
-    70%{
+    85% {
         opacity: 0.5;
     }
 
     100% {
         opacity: 0;
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* sliding-animation */
+.sliding-animation {
+    animation: sliding 12s linear infinite;
+}
+
+@keyframes sliding {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* sliding-animation-2 */
+.sliding-animation-2 {
+    animation: sliding-2 17s linear infinite;
+}
+
+@keyframes sliding-2 {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* sliding-animation-3 */
+.sliding-animation-3 {
+    animation: sliding-3 27s reverse linear infinite;
+}
+
+@keyframes sliding-3 {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-55%);
     }
 }

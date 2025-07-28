@@ -15,11 +15,11 @@ let bannerImg = document.querySelectorAll('.banner-img')
 bannerImg.forEach(img => {
 
     img.addEventListener('mouseenter', () => {
-        customCursor.classList.remove('shadow-[0_0_30px_5px_rgba(255,255,0,0.2)]', '-left-[4.5px]', 'bg-white')
+        customCursor.classList.remove('shadow-[0_0_30px_5px_rgba(255,255,0,0.3)]', '-left-[4.5px]', 'bg-white')
         customCursor.classList.add('-translate-x-1/2', 'border', 'border-white', 'h-11', 'w-32.5')
     })
     img.addEventListener('mouseleave', () => {
-        customCursor.classList.add('shadow-[0_0_30px_5px_rgba(255,255,0,0.2)]', '-left-[4.5px]', 'bg-white')
+        customCursor.classList.add('shadow-[0_0_30px_5px_rgba(255,255,0,0.3)]', '-left-[4.5px]', 'bg-white')
         customCursor.classList.remove('-translate-x-1/2', 'border', 'border-white', 'h-11', 'w-32.5', 'blur-[1px]')
     })
 
@@ -164,5 +164,17 @@ arowContainer.forEach(container => {
 
 // available Animation 
 
-let 
+let greenRadius = document.querySelector('.greenRadius')
+
+function available() {
+    greenRadius.classList.add('greenRadiusSpread')
+    setTimeout(() => {
+        greenRadius.classList.remove('greenRadiusSpread')
+        setTimeout(() => {
+            available()
+        }, 1500)
+    }, 500)
+}
+
+available()
 
