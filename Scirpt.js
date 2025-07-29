@@ -178,3 +178,38 @@ function available() {
 
 available()
 
+// section-8
+// question-row animation 
+let questionRows = document.querySelectorAll('.question-row');
+
+questionRows.forEach(row => {
+    const plusIcon = row.querySelector('.plus-icon');
+    const initialHeight = row.scrollHeight; // total content height
+    const collapsedHeight = 67; // Tailwind max-h-[67px]
+
+    // Optional: Set initial max-height in case you refresh while open
+    if (row.classList.contains('open')) {
+        row.style.maxHeight = row.scrollHeight + "px";
+    } else {
+        row.style.maxHeight = collapsedHeight + "px";
+    }
+
+    // Scale click effect
+    row.addEventListener('mousedown', () => row.classList.add('transform', 'scale-95'));
+    row.addEventListener('mouseup', () => row.classList.remove('scale-95'));
+    row.addEventListener('mouseleave', () => row.classList.remove('scale-95'));
+
+    // Expand/collapse
+    row.addEventListener('click', () => {
+        const isOpen = row.classList.contains('open');
+        plusIcon.classList.toggle('rotate-45');
+
+        if (!isOpen) {
+            row.classList.add('open');
+            row.style.maxHeight = row.scrollHeight + "px"; // animate open
+        } else {
+            row.style.maxHeight = collapsedHeight + "px";  // animate close
+            row.classList.remove('open');
+        }
+    });
+});
