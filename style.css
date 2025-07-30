@@ -50,7 +50,7 @@ body {
 
 /* shooting-star-1 */
 .shooting-star-1 {
-    animation: shooting-star-1 3s linear;
+    animation: shooting-star-1 3s 1s linear;
 }
 
 @keyframes shooting-star-1 {
@@ -75,7 +75,7 @@ body {
 
 /* shooting-star-2 */
 .shooting-star-2 {
-    animation: shooting-star-2 3.5s linear;
+    animation: shooting-star-2 3.5s 1s linear;
 }
 
 @keyframes shooting-star-2 {
@@ -100,7 +100,7 @@ body {
 
 /* shooting-star-3 */
 .shooting-star-3 {
-    animation: shooting-star-3 3.5s 1s linear;
+    animation: shooting-star-3 3.5s 2s linear;
 }
 
 @keyframes shooting-star-3 {

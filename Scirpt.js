@@ -1,5 +1,70 @@
 // loading
+let video = document.querySelector('#video')
+let tag = document.querySelectorAll('#tag')
+let headingWord1 = document.querySelectorAll('#heading-word-1')
+let headingWord2 = document.querySelectorAll('#heading-word-2')
+let arrowIcon = document.querySelectorAll('#arrow-icon')
+let button1 = document.querySelectorAll('#button-1')
+let button2 = document.querySelectorAll('#button-2')
+let cursorIcon1 = document.querySelector('#cursor-icon-1')
+let cursorIcon2 = document.querySelector('#cursor-icon-2')
+let paragragh = document.querySelector('#paragragh')
+let bottomSection = document.querySelector('#bottom-section')
 
+window.addEventListener('DOMContentLoaded', () => {
+
+    setTimeout(() => {
+        video.classList.remove('opacity-0')
+        // tag 
+        tag.forEach(el => {
+            el.classList.remove('opacity-0')
+        });
+        //  headingWord1
+        headingWord1.forEach(el => {
+            el.classList.remove('opacity-0', 'translate-y-3')
+            el.classList.add('translate-y-0')
+        });
+        //  headingWord2 
+        headingWord2.forEach(el => {
+            el.classList.remove('opacity-0', 'translate-y-8')
+            el.classList.add('translate-y-0')
+        });
+        // arrowIcon 
+        arrowIcon.forEach(el => {
+            el.classList.remove('opacity-0')
+        });
+        // button1 
+        button1.forEach(el => {
+            el.classList.remove('opacity-0', 'translate-y-3')
+            el.classList.add('translate-y-0')
+        });
+        // button2 
+        button2.forEach(el => {
+            el.classList.remove('opacity-0', 'translate-y-5')
+            el.classList.add('translate-y-0')
+        });
+        // cursorIcon1
+        cursorIcon1.classList.remove('opacity-0')
+        // cursorIcon2 
+        cursorIcon2.classList.remove('opacity-0')
+        // paragragh words 
+        for (let i = 0; i < 21; i++) {
+            setTimeout(() => {
+                let word = document.querySelector(`#word-${i}`);
+                if (word) {
+                    word.classList.remove('opacity-0', 'translate-y-3');
+                    word.classList.add('translate-y-0');
+                }
+            }, i * 100)
+        }
+        // bottom-Section imgs
+        setTimeout(() => {
+            bottomSection.classList.remove('opacity-0', '-translate-x-10')
+            bottomSection.classList.add('translate-x-0')
+        }, 720)
+    }, 700)
+
+})
 
 // custom cursor 
 let customCursor = document.querySelector('.custom-cursor')
@@ -142,6 +207,22 @@ function starAnimation5() {
 
 starAnimation5();
 
+// scroll Animation
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove('opacity-0', '-translate-x-20');
+            entry.target.classList.add('opacity-100', 'translate-x-0');
+        }
+    });
+}, {
+    threshold: 0.1,
+});
+
+document.querySelectorAll('.translate-item').forEach((el) => {
+    observer.observe(el);
+});
 
 // arow jump animation 
 
@@ -178,6 +259,32 @@ function available() {
 
 available()
 
+// slider Animation 
+const section = document.querySelector('#slider-section');
+const slider = document.querySelector('.slider');
+
+window.addEventListener('scroll', () => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    const scrollY = window.scrollY;
+    const windowHeight = window.innerHeight;
+
+    // When section is fully in or partially in view
+    if (scrollY + windowHeight >= sectionTop && scrollY <= sectionTop + sectionHeight) {
+        // How much has been scrolled inside the section (0 to 1)
+        const scrollInside = scrollY + windowHeight - sectionTop;
+        const maxScroll = windowHeight + sectionHeight;
+
+        const progress = scrollInside / maxScroll;
+
+        // Map progress to translateX value (like scrollbar)
+        const maxTranslate = -1000; // You can adjust this
+        const translateX = maxTranslate * progress;
+
+        slider.style.transform = `translateX(${translateX}px)`;
+    }
+});
+
 // section-8
 // question-row animation 
 let questionRows = document.querySelectorAll('.question-row');
@@ -187,7 +294,6 @@ questionRows.forEach(row => {
     const initialHeight = row.scrollHeight; // total content height
     const collapsedHeight = 67; // Tailwind max-h-[67px]
 
-    // Optional: Set initial max-height in case you refresh while open
     if (row.classList.contains('open')) {
         row.style.maxHeight = row.scrollHeight + "px";
     } else {
@@ -213,3 +319,5 @@ questionRows.forEach(row => {
         }
     });
 });
+
+// why - choose - me - section - 6

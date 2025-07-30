@@ -93,12 +93,12 @@
             </div>
         </div>
     </nav>
-    <!-- <Banner-1-section></Banner-1-section> -->
+    <!-- <Banner-section-1></Banner-section-1> -->
     <section class="relative z-0 px-4.5 pt-30 pb-20 md:px-10 md:pt-40 md:pb-25 overflow-hidden hidde">
         <!-- overlayer  -->
         <div class="bg-black/90 absolute left-0 top-0 w-full h-full "></div>
         <!-- shooting star -->
-        <div class="  absolute top-0 max-xl:left-1/2 max-xl:translate-x-1/2 xl:right-200  ">
+        <div class="absolute top-0 max-xl:left-1/2 max-xl:translate-x-1/2 xl:right-200  ">
             <!-- shooting-star-1  -->
             <div style="background: linear-gradient(270deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);  "
                 class="shooting-star-1 opacity-0 text-white relative -top-30 right-75 rounded-[2px] w-26 h-[1px] mt-20 rotate-25">
@@ -131,7 +131,7 @@
             </div>
         </div>
         <!-- video  -->
-        <div class="absolute -z-40 top-35 right-0 ">
+        <div id="video" class="opacity-0 absolute -z-40 top-35 right-0 ">
             <video class="h-screen scale-150" autoplay muted loop>
                 <source src="video/banner-video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
@@ -143,8 +143,8 @@
             <div class="flex justify-center ">
                 <div class="flex flex-col gap-6 relative w-full max-w-[1200px]">
                     <!-- tag -->
-                    <div
-                        class="text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-56.5 py-1.5 px-4 rounded-full">
+                    <div id="tag"
+                        class="opacity-0 text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-56.5 py-1.5 px-4 rounded-full">
                         <span
                             class="inline-flex items-center justify-center border-y border-x-2 border-white rounded-full p-[1px]">
                             <span class="size-[5px] bg-white rounded-full m-[0.5px]"></span>
@@ -156,16 +156,19 @@
                     <div class="flex flex-col gap-4">
                         <!-- heading  -->
                         <div class="flex items-center  gap-4 ">
-                            <h1 class="text-white text-[clamp(0px,17vw,72px)] font-2 -mt-1.5 tracking-[-2px]">
-                                Johan
-                                <span class="text-primary">Beker</span>
+                            <h1
+                                class="text-white text-[clamp(0px,17vw,72px)] font-2 flex items-center -mt-1.5 tracking-[-2px]">
+                                <span id="heading-word-1"
+                                    class="opacity-0 translate-y-3 block transition-all duration-500">Johan</span>
+                                <span id="heading-word-2"
+                                    class="opacity-0 translate-y-8 block transition-all duration-500 text-primary ml-4">Beker</span>
                             </h1>
                             <a href="#"
                                 class="arow-container group  rounded-full size-13.5 mt-3.5 overflow-hidden max-md:hidden">
                                 <span
                                     class="bg-[#080808] rounded-full shadow-[inset_0_2px_0_0_rgba(184,180,180,0.14)] -rotate-35  flex items-center justify-center size-13.5 ">
-                                    <svg class="arow-svg size-[24.5px] " xmlns="http://www.w3.org/2000/svg"
-                                        viewBox="0 0 256 256" focusable="false"
+                                    <svg id="arrow-icon" class="opacity-0 arow-svg size-[24.5px] "
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
                                         color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
                                         style="user-select: none; display: inline-block; fill: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); color: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); flex-shrink: 0;">
                                         <g color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
@@ -182,25 +185,66 @@
                             </a>
                         </div>
                         <!-- paragraph -->
-                        <div class="text-[15px] md:text-base text-primary  font-semibold leading-7.5 -mt-[9px]">I'm a
-                            versatile designer
-                            specializing
-                            in graphic, web, and product
-                            <br class="max-sm:hidden">
-                            design to help grow your business. Let's bulid something great!
+                        <div id="paragragh"
+                            class="text-[15px] md:text-base text-primary flex items-center flex-wrap gap-0.5 max-w-[500px] font-semibold max-md:leading-7 md:leading-7.5 -mt-[9px]">
+                            <!-- <div class="sm:flex items-center flex-wrap gap-1"> -->
+                            <span id="word-1"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">I'm</span>
+                            <span id="word-2"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">a</span>
+                            <span id="word-3"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">versatile</span>
+                            <span id="word-4"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">designer</span>
+                            <span id="word-5"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">specializing</span>
+                            <span id="word-6"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">in</span>
+                            <span id="word-7"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">graphic,</span>
+                            <span id="word-8"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">web,</span>
+                            <span id="word-9"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">and</span>
+                            <span id="word-10"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">product</span>
+                            <!-- </div> -->
+
+                            <!-- <div class="sm:flex items-center flex-wrap gap-1"> -->
+                            <span id="word-11"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">design</span>
+                            <span id="word-12"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">to</span>
+                            <span id="word-13"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">help</span>
+                            <span id="word-14"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">grow</span>
+                            <span id="word-15"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">your</span>
+                            <span id="word-16"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">business.</span>
+                            <span id="word-17"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">Let's</span>
+                            <span id="word-18"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">bulid</span>
+                            <span id="word-19"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">something</span>
+                            <span id="word-20"
+                                class="opacity-0 block translate-y-3 transition-all duration-300 ease-in-out">great!</span>
+                            <!-- </div> -->
                         </div>
                     </div>
                     <!-- buttons  -->
                     <div class=" flex max-sm:flex-col items-center max-sm:items-start gap-4 -mt-[2px]">
                         <!-- button-1  -->
-                        <button style="background: linear-gradient(180deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -382%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10))
+                        <button id="button-1" style="background: linear-gradient(180deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -382%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10))
                          100%);"
-                            class="text-[15px] md:text-base text-white bg-[linear-gradient(180deg,_rgb(120,120,120)_0%,_rgb(10,10,10)_100%)] font-semibold rounded-[100px] max-md:w-70 h-14.5 px-[26px] py-[13px]">See
+                            class="opacity-0 translate-y-3 transition-all duration-500 block text-[15px] md:text-base text-white bg-[linear-gradient(180deg,_rgb(120,120,120)_0%,_rgb(10,10,10)_100%)] font-semibold rounded-[100px] max-md:w-70 h-14.5 px-[26px] py-[13px]">See
                             All Projects</button>
                         <!-- button-2  -->
-                        <button style="background: linear-gradient(180deg, var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))  0%, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120,
+                        <button id="button-2" style="background: linear-gradient(180deg, var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))  0%, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120,
                         120)) 140%)"
-                            class="text-[15px] md:text-base text-[#080808] bg-[linear-gradient(180deg,_white_0%,_rgb(120,120,120)_100%)] font-semibold rounded-[100px] max-md:w-70 h-14.5 px-[26px] py-[13px]">Contact
+                            class="opacity-0 translate-y-5 transition-all duration-500 block text-[15px] md:text-base text-[#080808] bg-[linear-gradient(180deg,_white_0%,_rgb(120,120,120)_100%)] font-semibold rounded-[100px] max-md:w-70 h-14.5 px-[26px] py-[13px]">Contact
                             Now</button>
                     </div>
                     <!-- Comments  -->
@@ -219,8 +263,8 @@
                             </div>
                             <!-- cursor icon of comment 1 -->
                             <span class="relative -right-57.5 -top-6 ">
-                                <svg class="size-[27.5px] rotate-95" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 256 256" focusable="false"
+                                <svg id="cursor-icon-1" class="opacity-0 size-[27.5px] rotate-95"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
                                     color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
                                     style="user-select: none; display: inline-block; fill: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); color: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); flex-shrink: 0;">
                                     <g color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
@@ -240,8 +284,8 @@
                             <!-- comment-2  -->
                             <!-- cursor icon of comment 2 -->
                             <span class="relative -left-3.5 -top-3.5 ">
-                                <svg class="size-[27.5px] rotate-0" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 256 256" focusable="false"
+                                <svg id="cursor-icon-2" class="opacity-0 size-[27.5px] rotate-0"
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" focusable="false"
                                     color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
                                     style="user-select: none; display: inline-block; fill: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); color: var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255)); flex-shrink: 0;">
                                     <g color="var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))"
@@ -270,7 +314,8 @@
                 </div>
             </div>
             <!-- bottom-section  -->
-            <div class="flex justify-center max-md:flex-col md:gap-4 2xl:px-6">
+            <div id="bottom-section"
+                class="opacity-0  -translate-x-10 transition-all duration-600 ease-in-out flex justify-center max-md:flex-col md:gap-4 2xl:px-6">
                 <!-- 1- column  -->
                 <div class="flex flex-col gap-6 ">
                     <!-- img-1  -->
@@ -299,12 +344,12 @@
                     </div>
                     <!-- img-2  -->
                     <div style="box-shadow:rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="banner-img arow-container bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px] relative">
+                        class="translate-item banner-img arow-container opacity-0 -translate-x-20 transition-all duration-700 ease-out bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px] relative">
                         <img class="w-full max-h-[161px] sm:max-h-[443px] md:h-[245px] rounded-[10px] bg-left object-cover"
                             src="img/Banner-img-2.avif" alt="">
                         <!-- arow icon  -->
                         <a href="#"
-                            class="   rounded-full absolute bottom-2 left-1  size-13.5 mt-3.5 overflow-hidden max-md:hidden">
+                            class="rounded-full absolute bottom-2 left-1  size-13.5 mt-3.5 overflow-hidden max-md:hidden">
                             <span
                                 class="bg-[#080808] rounded-full -rotate-35  flex items-center justify-center size-13.5 ">
                                 <svg class="arow-svg size-[24.5px] " xmlns="http://www.w3.org/2000/svg"
@@ -327,7 +372,7 @@
                     <!-- img-3  -->
                     <div style="box-shadow:rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
                         class="banner-img arow-container relative bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px]">
-                        <img class="w-full h-[245px] rounded-[15px] object-cover bg-left" src="img/Banner-img-3.avif"
+                        <img class="w-full h-[245px] rounded-[8px] object-cover bg-left" src="img/Banner-img-3.avif"
                             alt="">
                         <!-- arow icon  -->
                         <a href="#"
@@ -350,8 +395,9 @@
                     </div>
                     <!-- img-4  -->
                     <div style="box-shadow:rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="banner-img arow-container relative bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px]">
-                        <img class="w-full h-[509px] rounded-[15px] object-cover" src="img/Banner-img-4.avif" alt="">
+                        class="translate-item banner-img arow-container  opacity-0 -translate-x-20 transition-all duration-700 ease-out relative bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px]">
+                        <img class="w-full h-[509px] rounded-[9px] object-cover object-left" src="img/Banner-img-4.avif"
+                            alt="">
                         <!-- arow icon  -->
                         <a href="#"
                             class="  rounded-full absolute bottom-2 left-1  size-13.5 mt-3.5 overflow-hidden max-md:hidden">
@@ -392,8 +438,8 @@
         <!-- main-heading  -->
         <div class="flex flex-col items-center gap-6">
             <!-- tag -->
-            <div
-                class="text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-39.5 py-1.5 px-4 rounded-full -mb-1">
+            <div id="tag"
+                class="opacity text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-39.5 py-1.5 px-4 rounded-full -mb-1">
                 <span
                     class="inline-flex items-center justify-center border-y border-x-2 border-white rounded-full p-[1px]">
                     <span class="size-[5px] bg-white rounded-full m-[0.5px]"></span>
@@ -534,8 +580,8 @@
         </div>
     </section>
     <!-- <How-it-works-section-3></How-it-works-section-3> -->
-    <section
-        class="bg-[#080808]  border-t border-[#272727] rounded-[50px] flex flex-col items-center   max-md:px-4.5 max-md:py-20 max-xl:px-10 md:py-25  hidde">
+    <section id="slider-section"
+        class="bg-[#080808]  border-t border-[#272727] rounded-[50px] flex flex-col items-center   max-md:px-4.5 max-md:py-20 max-xl:px-10 md:py-25  overflow-hidden hidde">
         <!-- main-heading  -->
         <div class="flex flex-col items-center gap-6">
             <!-- tag -->
@@ -565,7 +611,7 @@
         </div>
         <!-- scroll slider  -->
         <div
-            class="max-xl:grid max-colg:grid-cols-1 max-xl:grid-cols-2  xl:flex xl:justify-center xl:items-center max-colg:items-center w-full max-colg:max-w-[540px] max-xl:max-w-[1090px]  gap-6 my-11 xl:overflow-hidden">
+            class="slider transition-all duration-1500 linear xl:translate-x-110 max-xl:grid max-colg:grid-cols-1 max-xl:grid-cols-2  xl:flex xl:justify-center xl:items-center max-colg:items-center w-full max-colg:max-w-[540px] max-xl:max-w-[1090px]  gap-6 my-11 ">
             <!-- slide-1  -->
             <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
                 class="bg-[#0F0F0F] rounded-[16px] relative p-5  md:p-7.5    xl:min-w-100 xl:w-135 ">
@@ -748,7 +794,8 @@
         </div>
     </section>
     <!-- <Design-services-section-4></Design-services-section-4> -->
-    <section id="section-4" class="bg-[#0A0A0A] border-t border-[#272727] rounded-[50px] px-4.5 py-20 md:px-10 md:py-25 hidde">
+    <section id="section-4"
+        class="bg-[#0A0A0A] border-t border-[#272727] rounded-[50px] px-4.5 py-20 md:px-10 md:py-25 hidde">
         <div class=" max-w-[1100px] mx-auto">
             <!-- header-div -->
             <div class="flex justify-center w-full">
@@ -793,7 +840,8 @@
             </div>
             <!-- main-content  -->
             <div class="my-11">
-                <div class="flex max-xl:flex-col gap-5">
+                <div
+                    class="translate-item  opacity-0 -translate-x-20 transition-all duration-700 ease-out flex max-xl:flex-col gap-5">
                     <!-- 1-column  -->
                     <div class="flex flex-col gap-6 xl:w-[540px]">
                         <!-- block-1  -->
@@ -1475,7 +1523,7 @@
                 <div class="flex flex-col gap-6 ">
                     <!-- img-1  -->
                     <div style="box-shadow:rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="banner-img arow-container bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px] relative">
+                        class="translate-item arow-container banner-img opacity-0 -translate-x-20 transition-all duration-700 ease-out   bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px] relative">
                         <img class="w-full max-sm:max-h-[161px] max-md:max-h-[443px] md:h-[509px] rounded-[10px] object-cover object-left"
                             src="img/Banner-img-1.avif" alt="">
                         <!-- arow icon  -->
@@ -1498,7 +1546,7 @@
                     </div>
                     <!-- img-2  -->
                     <div style="box-shadow:rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="banner-img arow-container bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px] relative">
+                        class="translate-item banner-img arow-container opacity-0 -translate-x-20 transition-all duration-700 ease-out  bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px] relative">
                         <img class="w-full max-h-[161px] sm:max-h-[443px] md:h-[245px] rounded-[10px] bg-left object-cover"
                             src="img/Banner-img-2.avif" alt="">
                         <!-- arow icon  -->
@@ -1524,7 +1572,7 @@
                 <div class="flex flex-col gap-6 max-md:hidden">
                     <!-- img-3  -->
                     <div style="box-shadow:rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="banner-img arow-container relative bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px]">
+                        class="translate-item banner-img arow-container opacity-0 -translate-x-20 transition-all duration-700 ease-out  relative bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px]">
                         <img class="w-full h-[245px] rounded-[15px] object-cover bg-left" src="img/Banner-img-3.avif"
                             alt="">
                         <!-- arow icon  -->
@@ -1548,7 +1596,7 @@
                     </div>
                     <!-- img-4  -->
                     <div style="box-shadow:rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="banner-img arow-container relative bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px]">
+                        class="translate-item banner-img arow-container opacity-0 -translate-x-20 transition-all duration-700 ease-out relative bg-[#0f0f0f] cursor-pointer p-5 rounded-[20px]">
                         <img class="w-full h-[509px] rounded-[15px] object-cover object-left"
                             src="img/Banner-img-4.avif" alt="">
                         <!-- arow icon  -->
@@ -2442,7 +2490,7 @@
                 </div>
                 <!-- right side  -->
                 <div class="colg:w-[552px]">
-                    <div class="bg-[#0F0F0F] rounded-[20px] ">
+                    <div class=" bg-[#0F0F0F] rounded-[20px] ">
                         <img class="p-5 md:p-6 " src="img/section-4-img-1.avif" alt="">
                     </div>
                 </div>
