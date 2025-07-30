@@ -259,26 +259,25 @@ function available() {
 
 available()
 
-// slider Animation 
 const section = document.querySelector('#slider-section');
 const slider = document.querySelector('.slider');
 
 window.addEventListener('scroll', () => {
+    // Only run on screens wider than 1300px
+    if (window.innerWidth <= 1300) return;
+
     const sectionTop = section.offsetTop;
     const sectionHeight = section.offsetHeight;
     const scrollY = window.scrollY;
     const windowHeight = window.innerHeight;
 
-    // When section is fully in or partially in view
+    // Check if section is in view
     if (scrollY + windowHeight >= sectionTop && scrollY <= sectionTop + sectionHeight) {
-        // How much has been scrolled inside the section (0 to 1)
         const scrollInside = scrollY + windowHeight - sectionTop;
         const maxScroll = windowHeight + sectionHeight;
-
         const progress = scrollInside / maxScroll;
 
-        // Map progress to translateX value (like scrollbar)
-        const maxTranslate = -1000; // You can adjust this
+        const maxTranslate = -1000; // adjust as needed
         const translateX = maxTranslate * progress;
 
         slider.style.transform = `translateX(${translateX}px)`;
@@ -319,5 +318,3 @@ questionRows.forEach(row => {
         }
     });
 });
-
-// why - choose - me - section - 6

@@ -237,14 +237,18 @@
                     <!-- buttons  -->
                     <div class=" flex max-sm:flex-col items-center max-sm:items-start gap-4 -mt-[2px]">
                         <!-- button-1  -->
-                        <button id="button-1" style="background: linear-gradient(180deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -382%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10))
+                        <div class="relative rounded-[100px] max-md:w-70 h-14.5 overflow-hidden">
+                            <button id="button-1" style="background: linear-gradient(180deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -382%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10))
                          100%);"
-                            class="opacity-0 translate-y-3 transition-all duration-500 block text-[15px] md:text-base text-white bg-[linear-gradient(180deg,_rgb(120,120,120)_0%,_rgb(10,10,10)_100%)] font-semibold rounded-[100px] max-md:w-70 h-14.5 px-[26px] py-[13px]">See
-                            All Projects</button>
+                                class="opacity-0 translate-y-3 transition-all duration-500 block text-[15px] md:text-base text-white bg-[linear-gradient(180deg,_rgb(120,120,120)_0%,_rgb(10,10,10)_100%)] font-semibold cursor-pointer relative -z10 rounded-[100px] max-md:w-70 h-14.5 px-[26px] py-[13px]">
+                                See All Projects
+                            </button>
+                            <div class="bg-black absolute size-full z-40"></div>
+                        </div>
                         <!-- button-2  -->
                         <button id="button-2" style="background: linear-gradient(180deg, var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))  0%, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120,
                         120)) 140%)"
-                            class="opacity-0 translate-y-5 transition-all duration-500 block text-[15px] md:text-base text-[#080808] bg-[linear-gradient(180deg,_white_0%,_rgb(120,120,120)_100%)] font-semibold rounded-[100px] max-md:w-70 h-14.5 px-[26px] py-[13px]">Contact
+                            class="opacity-0 translate-y-5 transition-all duration-500 block text-[15px] md:text-base text-[#080808] bg-[linear-gradient(180deg,_white_0%,_rgb(120,120,120)_100%)] font-semibold cursor-pointer  rounded-[100px] max-md:w-70 h-14.5 px-[26px] py-[13px]">Contact
                             Now</button>
                     </div>
                     <!-- Comments  -->
@@ -315,7 +319,7 @@
             </div>
             <!-- bottom-section  -->
             <div id="bottom-section"
-                class="opacity-0  -translate-x-10 transition-all duration-600 ease-in-out flex justify-center max-md:flex-col md:gap-4 2xl:px-6">
+                class="opacity-0  -translate-x-10 transition-all duration-600 ease-in-out bg-[#080808] flex justify-center max-md:flex-col md:gap-4 2xl:px-6">
                 <!-- 1- column  -->
                 <div class="flex flex-col gap-6 ">
                     <!-- img-1  -->
@@ -439,7 +443,7 @@
         <div class="flex flex-col items-center gap-6">
             <!-- tag -->
             <div id="tag"
-                class="opacity text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-39.5 py-1.5 px-4 rounded-full -mb-1">
+                class="opacity-0 text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-39.5 py-1.5 px-4 rounded-full -mb-1">
                 <span
                     class="inline-flex items-center justify-center border-y border-x-2 border-white rounded-full p-[1px]">
                     <span class="size-[5px] bg-white rounded-full m-[0.5px]"></span>
@@ -449,7 +453,7 @@
             <!-- header  -->
             <div class="flex flex-col gap-4">
                 <!-- heading  -->
-                <h1
+                <h1 id="heading-word-1"
                     class="text-[40px] md:text-[44px] xl:text-[54px] text-white text-center leading-11 tracking-[-2px] font-2 -mt-1">
                     Johan Beker,
                     <span class="text-primary">
@@ -1623,11 +1627,12 @@
         </div>
     </section>
     <!-- <why-choose-me-section-6></why-choose-me-section-6> -->
-    <section class="bg-[#0A0A0A] border-t border-[#272727] rounded-[50px] px-4.5 py-20 md:px-10 md:py-25 hidde">
+    <section
+        class="relative -z-10 bg-[#0A0A0A] border-t border-[#272727] rounded-[50px] px-4.5 py-20 md:px-10 md:py-25 hidde">
         <!-- main div  -->
         <div class="max-w-[1100px] mx-auto">
             <!-- main-heading  -->
-            <div class="flex flex-col items-center gap-6">
+            <div class="md:sticky top-30 flex flex-col items-center gap-6">
                 <!-- tag -->
                 <div
                     class="text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-[159.5px] py-1.5 px-4 rounded-full ">
@@ -1658,7 +1663,7 @@
             <div class="flex flex-col gap-6 mt-11">
                 <!-- row-1 -->
                 <div style="box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;"
-                    class="bg-[#0F0F0F] rounded-[20px] flex max-md:flex-col p-6 colg:p-10">
+                    class="md:sticky -z-1 top-76 bg-[#0F0F0F] rounded-[20px] flex max-md:flex-col p-6 colg:p-10">
                     <!-- left-side  -->
                     <div class="flex flex-col gap-7.5 md:min-w-[244px] md:w-[459px]">
                         <!-- upper-part  -->
@@ -1701,7 +1706,7 @@
                 </div>
                 <!-- row-2 -->
                 <div style="box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;"
-                    class="bg-[#0F0F0F] rounded-[20px] flex max-md:flex-col p-6 colg:p-10">
+                    class="md:sticky -z-1 top-81 bg-[#0F0F0F] rounded-[20px] flex max-md:flex-col p-6 colg:p-10">
                     <!-- left-side  -->
                     <div class="flex flex-col gap-7.5 md:min-w-[244px] md:w-[459px]">
                         <!-- upper-part  -->
@@ -1741,7 +1746,7 @@
                 </div>
                 <!-- row-3 -->
                 <div style="box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;"
-                    class="bg-[#0F0F0F] rounded-[20px] flex max-md:flex-col p-6 colg:p-10">
+                    class="md:sticky -z-1 top-86 bg-[#0F0F0F] rounded-[20px] flex max-md:flex-col p-6 colg:p-10">
                     <!-- left-side  -->
                     <div class="flex flex-col gap-7.5 md:min-w-[244px] md:w-[459px]">
                         <!-- upper-part  -->
@@ -1784,7 +1789,7 @@
                 </div>
                 <!-- row-4 -->
                 <div style="box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;"
-                    class="bg-[#0F0F0F] rounded-[20px] flex max-md:flex-col p-6 colg:p-10">
+                    class="relative z-10 bg-[#0F0F0F] rounded-[20px] flex max-md:flex-col p-6 colg:p-10">
                     <!-- left-side  -->
                     <div class="flex flex-col gap-7.5 md:min-w-[244px] md:w-[459px]">
                         <!-- upper-part  -->
@@ -1827,74 +1832,78 @@
         </div>
     </section>
     <!-- <Happy-client-section-7></Happy-client-section-7> -->
-    <section class="bg-[#080808] border-t border-[#272727] rounded-[50px] px-4.5 py-20 md:px-10 md:py-25 hidde">
+    <section
+        class="relative z-0 bg-[#080808] border-t border-[#272727] rounded-[50px] px-4.5 py-20 md:px-10 md:py-25 hidde">
         <!-- main div  -->
         <div class="flex max-xl:flex-col gap-11 max-w-[1100px] mx-auto">
             <!-- left-side  -->
             <div class="xl:w-[576px]">
-                <!-- main-heading -->
-                <div>
-                    <!-- tag -->
-                    <div
-                        class="text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-[145px] py-1.5 px-4 rounded-full ">
-                        <span
-                            class="inline-flex items-center justify-center border-y border-x-2 border-white rounded-full p-[1px]">
-                            <span class="size-[5px] bg-white rounded-full m-[0.5px]"></span>
-                        </span>
-                        <span style="word-spacing: 1px;" class="ml-1.5  flex shrink-0 tracking-[-0.5px]">Happy
-                            Clients</span>
-                    </div>
-                    <!-- header  -->
-                    <div class="flex flex-col gap-4 mt-6">
-                        <!-- heading  -->
-                        <h1
-                            class="text-[40px] md:text-[44px] xl:text-[54px] text-white  leading-11 tracking-[-2px] font-2 ">
-                            Clients
-                            <span class="text-primary">
-                                Love me
+                <!-- inner div -->
+                <div class="xl:sticky top-34">
+                    <!-- main-heading -->
+                    <div class="">
+                        <!-- tag -->
+                        <div
+                            class="text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-[145px] py-1.5 px-4 rounded-full ">
+                            <span
+                                class="inline-flex items-center justify-center border-y border-x-2 border-white rounded-full p-[1px]">
+                                <span class="size-[5px] bg-white rounded-full m-[0.5px]"></span>
                             </span>
-                        </h1>
-                        <!-- paragraph -->
-                        <p class="max-md:text-[15px] text-primary font-semibold">
-                            Trusted by 100+ happy clients, adding $250M+ in revenue.
-                        </p>
+                            <span style="word-spacing: 1px;" class="ml-1.5  flex shrink-0 tracking-[-0.5px]">Happy
+                                Clients</span>
+                        </div>
+                        <!-- header  -->
+                        <div class="flex flex-col gap-7 mt-8.5">
+                            <!-- heading  -->
+                            <h1
+                                class="text-[40px] md:text-[44px] xl:text-[54px] text-white  leading-11 tracking-[-2px] font-2 ">
+                                Clients
+                                <span class="text-primary">
+                                    Love me
+                                </span>
+                            </h1>
+                            <!-- paragraph -->
+                            <p class="max-md:text-[15px] text-primary font-semibold">
+                                Trusted by 100+ happy clients, adding $250M+ in revenue.
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <!-- boxs  -->
-                <div class="flex max-md:flex-col items-center w-full gap-6 mt-6">
-                    <!-- box-1  -->
-                    <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="bg-[#0F0F0F] flex flex-col rounded-[10px] max-xl:w-full p-6">
-                        <span class="text-white text-[30px] text-center font-semibold">100+</span>
-                        <p class="text-primary text-[15px] text-center font-medium mt-2">Happy clients</p>
+                    <!-- boxs  -->
+                    <div class="flex max-md:flex-col items-center w-full gap-6 mt-6">
+                        <!-- box-1  -->
+                        <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                            class="bg-[#0F0F0F] flex flex-col rounded-[10px] w-full p-6">
+                            <span class="text-white text-[30px] text-center font-semibold">100+</span>
+                            <p class="text-primary text-[15px] text-center font-medium mt-2">Happy clients</p>
+                        </div>
+                        <!-- box-2  -->
+                        <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                            class="bg-[#0F0F0F] flex flex-col rounded-[10px] w-full p-6">
+                            <span class="text-white text-[30px] text-center font-semibold">$250m</span>
+                            <p class="text-primary text-[15px] text-center font-medium mt-2">revenue added</p>
+                        </div>
+                        <!-- box-3  -->
+                        <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
+                            class="bg-[#0F0F0F] flex flex-col rounded-[10px] w-full p-6">
+                            <span class="text-white text-[30px] text-center font-semibold">4.8</span>
+                            <p class="text-primary text-[15px] text-center font-medium mt-2">Average Rating</p>
+                        </div>
                     </div>
-                    <!-- box-2  -->
-                    <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="bg-[#0F0F0F] flex flex-col rounded-[10px] max-xl:w-full p-6">
-                        <span class="text-white text-[30px] text-center font-semibold">$250m</span>
-                        <p class="text-primary text-[15px] text-center font-medium mt-2">revenue added</p>
-                    </div>
-                    <!-- box-3  -->
-                    <div style="box-shadow: rgba(0, 0, 0, 0.4) 16px 24px 20px 8px, rgba(184, 180, 180, 0.08) 0px 2px 0px 0px inset;"
-                        class="bg-[#0F0F0F] flex flex-col rounded-[10px] max-xl:w-full p-6">
-                        <span class="text-white text-[30px] text-center font-semibold">4.8</span>
-                        <p class="text-primary text-[15px] text-center font-medium mt-2">Average Rating</p>
-                    </div>
-                </div>
-                <!-- line  -->
-                <div class="bg-white opacity-10 w-full h-[1px] my-6 max-md:hidden"></div>
-                <!-- buttons  -->
-                <div class=" flex max-sm:flex-col items-center max-sm:items-start gap-4 -mt-[2px] max-md:hidden">
-                    <!-- button-1  -->
-                    <button style="background: linear-gradient(180deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -382%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10))
+                    <!-- line  -->
+                    <div class="bg-white opacity-10 w-full h-[1px] my-6 max-md:hidden"></div>
+                    <!-- buttons  -->
+                    <div class="flex max-sm:flex-col items-center max-sm:items-start gap-4 -mt-[2px] max-md:hidden">
+                        <!-- button-1  -->
+                        <button style="background: linear-gradient(180deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -382%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10))
                          100%);"
-                        class="text-[15px] md:text-base text-white bg-[linear-gradient(180deg,_rgb(120,120,120)_0%,_rgb(10,10,10)_100%)] font-semibold rounded-[100px] max-md:w-70 h-14.5 px-[26px] py-[13px]">See
-                        All Projects</button>
-                    <!-- button-2  -->
-                    <button style="background: linear-gradient(180deg, var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))  0%, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120,
+                            class="text-[15px] md:text-base text-white bg-[linear-gradient(180deg,_rgb(120,120,120)_0%,_rgb(10,10,10)_100%)] font-semibold rounded-[100px] max-md:w-70 h-14.5 px-[26px] py-[13px]">See
+                            All Projects</button>
+                        <!-- button-2  -->
+                        <button style="background: linear-gradient(180deg, var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))  0%, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120,
                         120)) 140%)"
-                        class="text-[15px] md:text-base text-[#080808] bg-[linear-gradient(180deg,_white_0%,_rgb(120,120,120)_100%)] font-semibold rounded-[100px] max-md:w-70 h-14.5 px-[26px] py-[13px]">Contact
-                        Now</button>
+                            class="text-[15px] md:text-base text-[#080808] bg-[linear-gradient(180deg,_white_0%,_rgb(120,120,120)_100%)] font-semibold rounded-[100px] max-md:w-70 h-14.5 px-[26px] py-[13px]">Contact
+                            Now</button>
+                    </div>
                 </div>
             </div>
             <!-- right-side  -->
@@ -1902,7 +1911,7 @@
                 <!-- card-1  -->
                 <div style="background: linear-gradient(121deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -52%, var(--token-cba3b9c8-9e49-437e-aca1-1e69db3088dc, rgb(17, 17, 17))  19%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10,
                     10, 10)) 100%); box-shadow:rgba(184, 180, 180, 0.08) 0px 2px 0px 0px
-                    inset;" class="rounded-[16px] p-6 mb-6">
+                    inset;" class="xl:sticky top-34 -z-1 rounded-[16px] p-6 mb-6">
                     <!-- header -->
                     <div class="flex items-center gap-4">
                         <img class="rounded-[8px] size-19 object-cover" src="img/section-7-img-1.avif" alt="">
@@ -1959,7 +1968,7 @@
                 <!-- card-2  -->
                 <div style="background: linear-gradient(121deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -52%, var(--token-cba3b9c8-9e49-437e-aca1-1e69db3088dc, rgb(17, 17, 17))  19%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10,
                     10, 10)) 100%); box-shadow:rgba(184, 180, 180, 0.08) 0px 2px 0px 0px
-                    inset;" class="rounded-[16px] p-6 mb-6">
+                    inset;" class="xl:sticky top-39 z-0 rounded-[16px] p-6 mb-6">
                     <!-- header -->
                     <div class="flex items-center gap-4">
                         <img class="rounded-[8px] size-19 object-cover" src="img/section-7-img-2.avif" alt="">
@@ -2022,7 +2031,7 @@
                 <!-- card-3  -->
                 <div style="background: linear-gradient(121deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -52%, var(--token-cba3b9c8-9e49-437e-aca1-1e69db3088dc, rgb(17, 17, 17))  19%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10,
                     10, 10)) 100%); box-shadow:rgba(184, 180, 180, 0.08) 0px 2px 0px 0px
-                    inset;" class="rounded-[16px] p-6 mb-6">
+                    inset;" class="xl:sticky top-44 z-1 rounded-[16px] p-6 mb-6">
                     <!-- header -->
                     <div class="flex items-center gap-4">
                         <img class="rounded-[8px] size-19 object-cover" src="img/section-7-img-3.avif" alt="">
@@ -2078,7 +2087,7 @@
                 <!-- card-4  -->
                 <div style="background: linear-gradient(121deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -52%, var(--token-cba3b9c8-9e49-437e-aca1-1e69db3088dc, rgb(17, 17, 17))  19%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10,
                     10, 10)) 100%); box-shadow:rgba(184, 180, 180, 0.08) 0px 2px 0px 0px
-                    inset;" class="rounded-[16px] p-6 mb-6">
+                    inset;" class="relative z-4 rounded-[16px] p-6 mb-6">
                     <!-- header -->
                     <div class="flex items-center gap-4">
                         <img class="rounded-[8px] size-19 object-cover" src="img/section-7-img-4.avif" alt="">
@@ -2141,103 +2150,106 @@
         <div class="flex max-xl:flex-col gap-11 max-w-[1100px] mx-auto">
             <!-- left-side  -->
             <div class="xl:w-[451px]">
-                <!-- main-heading -->
-                <div>
-                    <!-- tag -->
-                    <div
-                        class="text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-[132px] py-1.5 px-4 rounded-full ">
-                        <span
-                            class="inline-flex items-center justify-center border-y border-x-2 border-white rounded-full p-[1px]">
-                            <span class="size-[5px] bg-white rounded-full m-[0.5px]"></span>
-                        </span>
-                        <span style="word-spacing: 1px;" class="ml-1.5  flex shrink-0 tracking-[-0.5px]">FAQ
-                            Section</span>
-                    </div>
-                    <!-- header  -->
-                    <div class="flex flex-col gap-4 mt-6">
-                        <!-- heading  -->
-                        <h1
-                            class="text-[40px] md:text-[44px] xl:text-[54px] text-white  leading-11 tracking-[-2px] font-2 ">
-                            Questions,
-                            <span class="text-primary">
-                                Answers
+                <!-- inner div -->
+                <div class="xl:sticky top-34">
+                    <!-- main-heading -->
+                    <div>
+                        <!-- tag -->
+                        <div
+                            class="text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-[132px] py-1.5 px-4 rounded-full ">
+                            <span
+                                class="inline-flex items-center justify-center border-y border-x-2 border-white rounded-full p-[1px]">
+                                <span class="size-[5px] bg-white rounded-full m-[0.5px]"></span>
                             </span>
-                        </h1>
-                        <!-- paragraph -->
-                        <p class="max-md:text-[15px] text-primary font-semibold">
-                            Get quick answers to your most pressing questions
-                        </p>
-                    </div>
-                </div>
-                <!-- card  -->
-                <div style="background: linear-gradient(121deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -52%, var(--token-cba3b9c8-9e49-437e-aca1-1e69db3088dc, rgb(17, 17, 17))  19%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10,
-                    10, 10)) 100%); box-shadow:rgba(184, 180, 180, 0.08) 0px 2px 0px 0px
-                    inset;" class="rounded-[16px] p-6 my-6">
-                    <!-- header -->
-                    <div class="flex items-center gap-4">
-                        <img class="rounded-[8px] size-19 object-cover" src="img/section-8-img-1.avif" alt="">
-                        <div class="flex flex-col gap-3">
-                            <h3 class="text-xl md:text-[25px] text-white font-semibold">Ryan harper</h3>
-                            <p class="text-primary max-md:text-[15px] font-semibold">Harper education</p>
+                            <span style="word-spacing: 1px;" class="ml-1.5  flex shrink-0 tracking-[-0.5px]">FAQ
+                                Section</span>
+                        </div>
+                        <!-- header  -->
+                        <div class="flex flex-col gap-7 mt-8.5">
+                            <!-- heading  -->
+                            <h1
+                                class="text-[40px] md:text-[44px] xl:text-[54px] text-white  leading-11 tracking-[-2px] font-2 ">
+                                Questions,
+                                <span class="text-primary">
+                                    Answers
+                                </span>
+                            </h1>
+                            <!-- paragraph -->
+                            <p class="max-md:text-[15px] text-primary font-semibold">
+                                Get quick answers to your most pressing questions
+                            </p>
                         </div>
                     </div>
-                    <!-- line  -->
-                    <hr class="text-white/10 my-6">
-                    <!-- stars rating -->
-                    <div class="flex items-center mb-6">
-                        <span class="text-secondary mr-2 font-3">5.0</span>
-                        <!-- star-1  -->
-                        <span class="mr-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
-                                <path fill="#CAA900"
-                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
-                            </svg>
-                        </span>
-                        <!-- star-2  -->
-                        <span class="mr-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
-                                <path fill="#CAA900"
-                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
-                            </svg>
-                        </span>
-                        <!-- star-3  -->
-                        <span class="mr-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
-                                <path fill="#CAA900"
-                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
-                            </svg>
-                        </span>
-                        <!-- star-4  -->
-                        <span class="mr-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
-                                <path fill="#CAA900"
-                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
-                            </svg>
-                        </span>
-                        <!-- star-5  -->
-                        <span class="mr-1">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
-                                <path fill="#CAA900"
-                                    d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
-                            </svg>
-                        </span>
+                    <!-- card  -->
+                    <div style="background: linear-gradient(121deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -52%, var(--token-cba3b9c8-9e49-437e-aca1-1e69db3088dc, rgb(17, 17, 17))  19%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10,
+                    10, 10)) 100%); box-shadow:rgba(184, 180, 180, 0.08) 0px 2px 0px 0px
+                    inset;" class="rounded-[16px] p-6 my-6">
+                        <!-- header -->
+                        <div class="flex items-center gap-4">
+                            <img class="rounded-[8px] size-19 object-cover" src="img/section-8-img-1.avif" alt="">
+                            <div class="flex flex-col gap-3">
+                                <h3 class="text-xl md:text-[25px] text-white font-semibold">Ryan harper</h3>
+                                <p class="text-primary max-md:text-[15px] font-semibold">Harper education</p>
+                            </div>
+                        </div>
+                        <!-- line 
+                        <hr class="text-white/10 my-6"> -->
+                        <!-- stars rating -->
+                        <div class="flex items-center my-6">
+                            <span class="text-primary mr-2 font-3">5.0</span>
+                            <!-- star-1  -->
+                            <span class="mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
+                                    <path fill="#CAA900"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </span>
+                            <!-- star-2  -->
+                            <span class="mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
+                                    <path fill="#CAA900"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </span>
+                            <!-- star-3  -->
+                            <span class="mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
+                                    <path fill="#CAA900"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </span>
+                            <!-- star-4  -->
+                            <span class="mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
+                                    <path fill="#CAA900"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </span>
+                            <!-- star-5  -->
+                            <span class="mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24">
+                                    <path fill="#CAA900"
+                                        d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2L9.19 8.63L2 9.24l5.46 4.73L5.82 21z" />
+                                </svg>
+                            </span>
+                        </div>
+                        <p class="text-[15px] text-secondary font-medium">Exceptional creativity and attention to
+                            detail! The final product not only looks great but also enhances user engagement
+                        </p>
                     </div>
-                    <p class="text-[15px] text-secondary font-semibold">Exceptional creativity and attention to detail!
-                        The final product not only looks great but also enhances user engagement
-                    </p>
-                </div>
-                <!-- buttons  -->
-                <div class=" flex max-sm:flex-col items-center max-sm:items-start gap-4 ">
-                    <!-- button-1  -->
-                    <button style="background: linear-gradient(180deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -382%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10))
+                    <!-- buttons  -->
+                    <div class=" flex max-sm:flex-col items-center max-sm:items-start gap-4 ">
+                        <!-- button-1  -->
+                        <button style="background: linear-gradient(180deg, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120, 120))  -382%, var(--token-f5646347-2529-487d-8af1-d99f05c5451c, rgb(10, 10, 10))
                          100%);"
-                        class="text-[15px] md:text-base text-white bg-[linear-gradient(180deg,_rgb(120,120,120)_0%,_rgb(10,10,10)_100%)] font-semibold rounded-[100px] h-14.5 px-[26px] py-[13px]">See
-                        All Projects</button>
-                    <!-- button-2  -->
-                    <button style="background: linear-gradient(180deg, var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))  0%, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120,
+                            class="text-[15px] md:text-base text-white bg-[linear-gradient(180deg,_rgb(120,120,120)_0%,_rgb(10,10,10)_100%)] font-semibold rounded-[100px] h-14.5 px-[26px] py-[13px]">See
+                            All Projects</button>
+                        <!-- button-2  -->
+                        <button style="background: linear-gradient(180deg, var(--token-7a7ce709-7970-4e23-97d8-1ae0355d02f0, rgb(255, 255, 255))  0%, var(--token-16f2e642-57af-452f-984c-64067596f797, rgb(120, 120,
                         120)) 140%)"
-                        class="text-[15px] md:text-base text-[#080808] bg-[linear-gradient(180deg,_white_0%,_rgb(120,120,120)_100%)] font-semibold rounded-[100px] h-14.5 px-[26px] py-[13px]">Contact
-                        Now</button>
+                            class="text-[15px] md:text-base text-[#080808] bg-[linear-gradient(180deg,_white_0%,_rgb(120,120,120)_100%)] font-semibold rounded-[100px] h-14.5 px-[26px] py-[13px]">Contact
+                            Now</button>
+                    </div>
                 </div>
             </div>
             <!-- right-side  -->
@@ -2410,7 +2422,7 @@
             </div>
         </div>
     </section>
-    <!-- Let'<s-Connect-section-9></s-Connect-section-9> -->
+    <!-- Let's Connect-section-9></Let's Connect-section-9> -->
     <section class="bg-[#080808] border-t border-[#272727] rounded-[50px] px-4.5 py-10  md:p-10 hidde">
         <!-- main div -->
         <div class="max-w-[1100px] mx-auto">
@@ -2428,7 +2440,7 @@
                             Connect</span>
                     </div>
                     <!-- header  -->
-                    <div class="flex flex-col gap-4 mt-6 mb-8">
+                    <div class="flex flex-col gap-4 mt-8 mb-9">
                         <!-- heading  -->
                         <h1
                             class="text-[40px] md:text-[44px] xl:text-[54px] text-white  leading-11 tracking-[-2px] font-2 ">
@@ -2490,8 +2502,9 @@
                 </div>
                 <!-- right side  -->
                 <div class="colg:w-[552px]">
-                    <div class=" bg-[#0F0F0F] rounded-[20px] ">
-                        <img class="p-5 md:p-6 " src="img/section-4-img-1.avif" alt="">
+                    <div class=" bg-[#0F0F0F] rounded-[20px] flex items-center justify-center   overflow-hidden">
+                        <img class="p-5 md:p-6 colg:w-[552px] colg:h-[337.8px] scale110 " src="img/section-4-img-1.avif"
+                            alt="">
                     </div>
                 </div>
             </div>

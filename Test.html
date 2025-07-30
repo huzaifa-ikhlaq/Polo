@@ -5,251 +5,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Polo</title>
-
-    <link rel="stylesheet" href="src/output.css" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
-    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@100,200,300,400,500,600,700,800,900&display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet" />
-
-    <!-- GSAP and ScrollTrigger -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="box-border p-0 m-0 bg-[#080808]">
+<body class="box-border p-0 m-0">
 
-    <section
-        class="comparison-scroll-section vertical-section section bg-[#0A0A0A] border-t border-[#272727] rounded-[50px] px-4.5 py-20 md:px-10 md:py-25">
-        <div class="max-w-[1100px] mx-auto wrapper">
-            <!-- main-heading -->
-            <div class="flex flex-col items-center gap-6">
-                <!-- tag -->
-                <div
-                    class="text-white text-[15px] bg-[#0F0F0F] font-medium flex items-center justify-center shadow-none [box-shadow:rgba(0,0,0,0.4)_16px_24px_20px_8px,rgba(184,180,180,0.08)_0px_2px_0px_0px_inset] w-[159.5px] py-1.5 px-4 rounded-full">
-                    <span
-                        class="inline-flex items-center justify-center border-y border-x-2 border-white rounded-full p-[1px]">
-                        <span class="size-[5px] bg-white rounded-full m-[0.5px]"></span>
-                    </span>
-                    <span style="word-spacing: 1px;" class="ml-1.5 flex shrink-0 tracking-[-0.5px]">Why choose me</span>
-                </div>
-                <!-- header -->
-                <div class="flex flex-col gap-6">
-                    <h1
-                        class="text-[40px] md:text-[44px] xl:text-[54px] text-white text-center leading-11 tracking-[-2px] font-2">
-                        Why me as
-                        <span class="text-primary">Designer Partner</span>
-                    </h1>
-                    <p class="text-primary text-center font-semibold">
-                        Why partner with Me for the Design Excellence
-                    </p>
-                </div>
-            </div>
 
-            <!-- Animated Scroll Rows -->
-            <div class="list">
-                <!-- Row 1 -->
-                <div class="item">
-                    <div style="box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;"
-                        class="bg-[#0F0F0F] rounded-[20px] flex max-md:flex-col p-6 colg:p-10 w-full">
-                        <div class="flex flex-col gap-7.5 md:min-w-[244px] md:w-[459px]">
-                            <div class="bg-[#272727] size-[29px] flex items-center justify-center rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M21 7L9 19l-5.5-5.5l1.41-1.41L9 16.17L19.59 5.59z" />
-                                </svg>
-                            </div>
-                            <div class="flex flex-col gap-2.5">
-                                <h2 class="text-white text-xl xl:text-[25px] font-semibold">Skilled Professional</h2>
-                                <p class="text-secondary text-[15px] font-medium colg:font-semibold font-3">Gain access
-                                    to top-tier talent with years of experience, ensuring flawless execution </p>
-                            </div>
-                        </div>
-                        <div
-                            class="bg-white opacity-[0.1] md:h-[178px] colg:h-[151px] h-[1px] xl:h-[158px] w-full md:w-[1px] max-md:my-6 md:mx-12.5">
-                        </div>
-                        <div class="flex flex-col gap-7.5 md:min-w-[244px] md:w-[459px]">
-                            <div class="bg-[#272727] size-[29px] flex items-center justify-center rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 24 24">
-                                    <path fill="#fff"
-                                        d="M18.36 19.78L12 13.41l-6.36 6.37l-1.42-1.42L10.59 12L4.22 5.64l1.42-1.42L12 10.59l6.36-6.36l1.41 1.41L13.41 12l6.36 6.36z"
-                                        stroke-width="0.5" stroke="#fff" />
-                                </svg>
-                            </div>
-                            <div class="flex flex-col gap-2.5">
-                                <h2 class="text-white text-xl xl:text-[25px] font-semibold">Amateur Designer</h2>
-                                <p class="text-secondary text-[15px] font-medium colg:font-semibold font-3">Lack of
-                                    experience may result in design inconsistencies and overlooked details </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <!-- 👇 Sticky wrapper -->
+    <div class="sticky-wrapper relative h-full">
+        <!-- 👇 Sticky box inside -->
+        <div id="box"
+            class="sticky top-20 left-1/2 -translate-x-1/2 h-20 w-72 bg-white text-black flex justify-center items-center font-black text-2xl rounded-2xl transition-all duration-300 z-10">
+            BOX
+        </div>
 
-                <!-- Row 2 -->
-                <div class="item">
-                    <div style="box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;"
-                        class="bg-[#0F0F0F] rounded-[20px] flex max-md:flex-col p-6 colg:p-10 w-full">
-                        <div class="flex flex-col gap-7.5 md:min-w-[244px] md:w-[459px]">
-                            <div class="bg-[#272727] size-[29px] flex items-center justify-center rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M21 7L9 19l-5.5-5.5l1.41-1.41L9 16.17L19.59 5.59z" />
-                                </svg>
-                            </div>
-                            <div class="flex flex-col gap-2.5">
-                                <h2 class="text-white text-xl xl:text-[25px] font-semibold">Future-Ready Designs</h2>
-                                <p class="text-secondary text-[15px] font-medium colg:font-semibold font-3">Crafting
-                                    modern, scalable designs that grow with your business and stay ahead of trends. </p>
-                            </div>
-                        </div>
-                        <div
-                            class="bg-white opacity-[0.1] md:h-[178px] colg:h-[151px] h-[1px] xl:h-[158px] w-full md:w-[1px] max-md:my-6 md:mx-12.5">
-                        </div>
-                        <div class="flex flex-col gap-7.5 md:min-w-[244px] md:w-[459px]">
-                            <div class="bg-[#272727] size-[29px] flex items-center justify-center rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 24 24">
-                                    <path fill="#fff"
-                                        d="M18.36 19.78L12 13.41l-6.36 6.37l-1.42-1.42L10.59 12L4.22 5.64l1.42-1.42L12 10.59l6.36-6.36l1.41 1.41L13.41 12l6.36 6.36z"
-                                        stroke-width="0.5" stroke="#fff" />
-                                </svg>
-                            </div>
-                            <div class="flex flex-col gap-2.5">
-                                <h2 class="text-white text-xl xl:text-[25px] font-semibold">Outdated Concepts</h2>
-                                <p class="text-secondary text-[15px] font-medium colg:font-semibold font-3">Stale
-                                    designs that don’t reflect current trends or your evolving brand narrative. </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Row 3 -->
-                <div class="item">
-                    <div style="box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;"
-                        class="bg-[#0F0F0F] rounded-[20px] flex max-md:flex-col p-6 colg:p-10 w-full">
-                        <div class="flex flex-col gap-7.5 md:min-w-[244px] md:w-[459px]">
-                            <div class="bg-[#272727] size-[29px] flex items-center justify-center rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M21 7L9 19l-5.5-5.5l1.41-1.41L9 16.17L19.59 5.59z" />
-                                </svg>
-                            </div>
-                            <div class="flex flex-col gap-2.5">
-                                <h2 class="text-white text-xl xl:text-[25px] font-semibold">Client-Centric Collaboration
-                                </h2>
-                                <p class="text-secondary text-[15px] font-medium colg:font-semibold font-3">Your vision
-                                    leads the way — I work closely with you to bring ideas to life with precision and
-                                    creativity. </p>
-                            </div>
-                        </div>
-                        <div
-                            class="bg-white opacity-[0.1] md:h-[178px] colg:h-[151px] h-[1px] xl:h-[158px] w-full md:w-[1px] max-md:my-6 md:mx-12.5">
-                        </div>
-                        <div class="flex flex-col gap-7.5 md:min-w-[244px] md:w-[459px]">
-                            <div class="bg-[#272727] size-[29px] flex items-center justify-center rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 24 24">
-                                    <path fill="#fff"
-                                        d="M18.36 19.78L12 13.41l-6.36 6.37l-1.42-1.42L10.59 12L4.22 5.64l1.42-1.42L12 10.59l6.36-6.36l1.41 1.41L13.41 12l6.36 6.36z"
-                                        stroke-width="0.5" stroke="#fff" />
-                                </svg>
-                            </div>
-                            <div class="flex flex-col gap-2.5">
-                                <h2 class="text-white text-xl xl:text-[25px] font-semibold">Detached Communication</h2>
-                                <p class="text-secondary text-[15px] font-medium colg:font-semibold font-3">Lack of
-                                    collaboration and poor feedback loops can result in misaligned outcomes.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Row 4 -->
-                <div class="item">
-                    <div style="box-shadow: rgba(92, 92, 92, 0.08) 0px 2px 0px 0px inset;"
-                        class="bg-[#0F0F0F] rounded-[20px] flex max-md:flex-col p-6 colg:p-10 w-full">
-                        <div class="flex flex-col gap-7.5 md:min-w-[244px] md:w-[459px]">
-                            <div class="bg-[#272727] size-[29px] flex items-center justify-center rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 24 24">
-                                    <path fill="#fff" d="M21 7L9 19l-5.5-5.5l1.41-1.41L9 16.17L19.59 5.59z" />
-                                </svg>
-                            </div>
-                            <div class="flex flex-col gap-2.5">
-                                <h2 class="text-white text-xl xl:text-[25px] font-semibold">Timely Project Tracking</h2>
-                                <p class="text-secondary text-[15px] font-medium colg:font-semibold font-3">Stay
-                                    informed with regular progress updates and timely deliverables</p>
-                            </div>
-                        </div>
-                        <div
-                            class="bg-white opacity-[0.1] md:h-[178px] colg:h-[151px] h-[1px] xl:h-[158px] w-full md:w-[1px] max-md:my-6 md:mx-12.5">
-                        </div>
-                        <div class="flex flex-col gap-7.5 md:min-w-[244px] md:w-[459px]">
-                            <div class="bg-[#272727] size-[29px] flex items-center justify-center rounded-full">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 24 24">
-                                    <path fill="#fff"
-                                        d="M18.36 19.78L12 13.41l-6.36 6.37l-1.42-1.42L10.59 12L4.22 5.64l1.42-1.42L12 10.59l6.36-6.36l1.41 1.41L13.41 12l6.36 6.36z"
-                                        stroke-width="0.5" stroke="#fff" />
-                                </svg>
-                            </div>
-                            <div class="flex flex-col gap-2.5">
-                                <h2 class="text-white text-xl xl:text-[25px] font-semibold">Unstructured & Unreliable
-                                    Work</h2>
-                                <p class="text-secondary text-[15px] font-medium colg:font-semibold font-3">Inconsistent
-                                    timelines and last-minute changes can compromise quality</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> <!-- end list -->
-        </div> <!-- end wrapper -->
-    </section>
-
+        <section class="h-screen bg-black"></section>
+        <section id="section-2" class="bg-red-800 w-full h-[2px]"></section>
+        <section class="h-screen bg-yellow-200"></section>
+    </div>
 
     <script>
-        window.addEventListener("load", function () {
-            gsap.registerPlugin(ScrollTrigger);
+        let box = document.querySelector('#box');
+        let section2 = document.querySelector('#section-2');
 
-            const scrollSection = document.querySelectorAll(".comparison-scroll-section");
-
-            scrollSection.forEach((section) => {
-                const wrapper = section.querySelector(".wrapper");
-                const items = wrapper.querySelectorAll(".item");
-
-                items.forEach((item, index) => {
-                    if (index !== 0) {
-                        gsap.set(item, { yPercent: 100 });
-                    }
-                });
-
-                const timeline = gsap.timeline({
-                    scrollTrigger: {
-                        trigger: section,
-                        pin: true,
-                        start: "top top",
-                        end: () => `+=${items.length * 100}%`,
-                        scrub: 1,
-                        invalidateOnRefresh: true,
-                        // markers: true,
-                    },
-                    defaults: { ease: "none" }
-                });
-
-                items.forEach((item, index) => {
-                    timeline.to(item, {
-                        scale: 0.96,
-                        borderRadius: "12px"
-                    });
-
-                    if (index < items.length - 1) {
-                        timeline.to(
-                            items[index + 1],
-                            {
-                                yPercent: 0
-                            },
-                            "<"
-                        );
-                    }
-                });
+        let observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const stopY = box.getBoundingClientRect().top + window.scrollY;
+                    box.classList.remove('fixed');
+                    box.classList.add('absolute');
+                    box.style.top = `${stopY}px`;
+                } else {
+                    // 🛠️ Reset to fixed when leaving section
+                    box.classList.remove('absolute');
+                    box.classList.add('fixed');
+                    box.style.top = '5rem'; // top-20 = 5rem
+                }
             });
+        }, {
+            root: null,
+            threshold: 0.1,
+            rootMargin: '0px 0px -550px 0px'
         });
+
+        observer.observe(section2);
     </script>
+
 </body>
 
 </html>
