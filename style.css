@@ -258,7 +258,7 @@ body {
 /* bottom arrow  */
 
 .bottom-arow {
-    animation: ups-downs 2s infinite linear;
+    animation: ups-downs 3s infinite linear;
 }
 
 @keyframes ups-downs {

@@ -288,34 +288,53 @@ window.addEventListener('scroll', () => {
 // question-row animation 
 let questionRows = document.querySelectorAll('.question-row');
 
+// Function to update max-heights
+function updateHeights() {
+    questionRows.forEach(row => {
+        const plusIcon = row.querySelector('.plus-icon');
+        const header = row.querySelector('.question-header');
+        const collapsedHeight = header.offsetHeight + parseInt(getComputedStyle(row).paddingTop) + parseInt(getComputedStyle(row).paddingBottom);
+
+        if (row.classList.contains('open')) {
+            row.style.maxHeight = row.scrollHeight + "px";
+        } else {
+            row.style.maxHeight = collapsedHeight + "px";
+        }
+    });
+}
+
+// Initialize on load
+updateHeights();
+
+// Click handlers
 questionRows.forEach(row => {
     const plusIcon = row.querySelector('.plus-icon');
-    const initialHeight = row.scrollHeight; // total content height
-    const collapsedHeight = 67; // Tailwind max-h-[67px]
+    const header = row.querySelector('.question-header');
+    const collapsedHeight = header.offsetHeight + parseInt(getComputedStyle(row).paddingTop) + parseInt(getComputedStyle(row).paddingBottom);
 
-    if (row.classList.contains('open')) {
-        row.style.maxHeight = row.scrollHeight + "px";
-    } else {
-        row.style.maxHeight = collapsedHeight + "px";
-    }
-
-    // Scale click effect
+    // Click scale effect
     row.addEventListener('mousedown', () => row.classList.add('transform', 'scale-95'));
     row.addEventListener('mouseup', () => row.classList.remove('scale-95'));
     row.addEventListener('mouseleave', () => row.classList.remove('scale-95'));
 
-    // Expand/collapse
+    // Toggle open/collapse
     row.addEventListener('click', () => {
         const isOpen = row.classList.contains('open');
-        plusIcon.classList.toggle('rotate-45');
 
         if (!isOpen) {
             row.classList.add('open');
-            row.style.maxHeight = row.scrollHeight + "px"; // animate open
+            row.style.maxHeight = row.scrollHeight + "px";
+            plusIcon.classList.add('rotate-45');
         } else {
-            row.style.maxHeight = collapsedHeight + "px";  // animate close
             row.classList.remove('open');
+            row.style.maxHeight = collapsedHeight + "px";
+            plusIcon.classList.remove('rotate-45');
         }
     });
+});
+
+// ✅ Recalculate on screen resize
+window.addEventListener('resize', () => {
+    updateHeights();
 });
 

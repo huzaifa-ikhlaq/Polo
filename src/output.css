@@ -7,11 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-400: oklch(70.4% 0.191 22.216);
     --color-red-800: oklch(44.4% 0.177 26.899);
-    --color-red-900: oklch(39.6% 0.141 25.723);
-    --color-amber-400: oklch(82.8% 0.189 84.429);
-    --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-yellow-200: oklch(94.5% 0.129 101.54);
     --color-black: #000;
     --color-white: #fff;
@@ -189,6 +185,12 @@
   .pointer-events-none {
     pointer-events: none;
   }
+  .collapse {
+    visibility: collapse;
+  }
+  .visible {
+    visibility: visible;
+  }
   .absolute {
     position: absolute;
   }
@@ -303,17 +305,11 @@
   .bottom-5 {
     bottom: calc(var(--spacing) * 5);
   }
-  .bottom-6 {
-    bottom: calc(var(--spacing) * 6);
-  }
   .bottom-7 {
     bottom: calc(var(--spacing) * 7);
   }
   .bottom-7\.5 {
     bottom: calc(var(--spacing) * 7.5);
-  }
-  .bottom-8 {
-    bottom: calc(var(--spacing) * 8);
   }
   .bottom-11 {
     bottom: calc(var(--spacing) * 11);
@@ -335,12 +331,6 @@
   }
   .left-1\/2 {
     left: calc(1/2 * 100%);
-  }
-  .left-2 {
-    left: calc(var(--spacing) * 2);
-  }
-  .left-5 {
-    left: calc(var(--spacing) * 5);
   }
   .left-7 {
     left: calc(var(--spacing) * 7);
@@ -615,9 +605,6 @@
   .h-0\.5 {
     height: calc(var(--spacing) * 0.5);
   }
-  .h-5 {
-    height: calc(var(--spacing) * 5);
-  }
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
@@ -639,20 +626,8 @@
   .h-20 {
     height: calc(var(--spacing) * 20);
   }
-  .h-50 {
-    height: calc(var(--spacing) * 50);
-  }
-  .h-55 {
-    height: calc(var(--spacing) * 55);
-  }
   .h-58 {
     height: calc(var(--spacing) * 58);
-  }
-  .h-59 {
-    height: calc(var(--spacing) * 59);
-  }
-  .h-60 {
-    height: calc(var(--spacing) * 60);
   }
   .h-95 {
     height: calc(var(--spacing) * 95);
@@ -693,20 +668,50 @@
   .h-screen {
     height: 100vh;
   }
+  .max-h-\[6px\] {
+    max-height: 6px;
+  }
+  .max-h-\[9px\] {
+    max-height: 9px;
+  }
   .max-h-\[67px\] {
     max-height: 67px;
+  }
+  .max-h-\[94px\] {
+    max-height: 94px;
   }
   .max-h-\[161px\] {
     max-height: 161px;
   }
+  .max-h-\[px\] {
+    max-height: px;
+  }
+  .min-h-\[6\] {
+    min-height: 6;
+  }
+  .min-h-\[6px\] {
+    min-height: 6px;
+  }
+  .min-h-\[9px\] {
+    min-height: 9px;
+  }
+  .min-h-\[67\] {
+    min-height: 67;
+  }
+  .min-h-\[67p\] {
+    min-height: 67p;
+  }
+  .min-h-\[67px\] {
+    min-height: 67px;
+  }
+  .min-h-\[94px\] {
+    min-height: 94px;
+  }
+  .min-h-\[px\] {
+    min-height: px;
+  }
   .w-1 {
     width: calc(var(--spacing) * 1);
-  }
-  .w-2 {
-    width: calc(var(--spacing) * 2);
-  }
-  .w-3 {
-    width: calc(var(--spacing) * 3);
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
@@ -992,6 +997,12 @@
   .rounded-\[2px\] {
     border-radius: 2px;
   }
+  .rounded-\[8\] {
+    border-radius: 8;
+  }
+  .rounded-\[8p\] {
+    border-radius: 8p;
+  }
   .rounded-\[8px\] {
     border-radius: 8px;
   }
@@ -1088,9 +1099,6 @@
   }
   .bg-\[\#272727\] {
     background-color: #272727;
-  }
-  .bg-amber-500 {
-    background-color: var(--color-amber-500);
   }
   .bg-black {
     background-color: var(--color-black);
@@ -1324,6 +1332,9 @@
   }
   .whitespace-nowrap {
     white-space: nowrap;
+  }
+  .whitespace-pre {
+    white-space: pre;
   }
   .text-\[\#080808\] {
     color: #080808;
@@ -1783,11 +1794,6 @@
   .coxs\:items-center {
     @media (width >= 23.4375rem) {
       align-items: center;
-    }
-  }
-  .sm\:flex {
-    @media (width >= 36rem) {
-      display: flex;
     }
   }
   .sm\:max-h-\[443px\] {
@@ -2383,7 +2389,7 @@ body {
   }
 }
 .bottom-arow {
-  animation: ups-downs 2s infinite linear;
+  animation: ups-downs 3s infinite linear;
 }
 @keyframes ups-downs {
   0% {
